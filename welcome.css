@@ -19,6 +19,14 @@ body{
     background-color: var(--bg-color);
     cursor: none;
 }
+.ragnarok{
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--text-color);
+    text-transform: inherit;
+}
 
 h1{
     text-align: center;
