@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="welcome.css">
+</head>
+<body>
+    <h1> TRAINING</h1>
+    <br>
+    <br>
+    <br>
+    <div class="intro">
+
+            1. Click on the "Continue" button to continue to the Game Menu. You can then see a list of paths.
+
+        <br><br>
+            2. Select the path of your choice to begin the game.
+      <br><br>
+        3. You will be asked a series of questions . Answer them correctly to complete and conquer that path.
+        <br><br>
+            4. On completing any path you will be provided with a choice to select from the remaining paths.
+        <br><br>
+            5. You are provided with a restart button on every page, so if you feel like restarting the game, go for it.
+        
+        <br>
+        <br>
+        <br>
+        <ol>
+            That's enough instructions for now.... <br><b>MARCH FORWARD AND ANNIHILATE THE APPROACHING ENEMY</b>......
+        </ol>
+    </div>
+    <div class="cursor-outer"></div>
+    <div class="cursor-inner"></div>
+    <script>
+        const cursor = document.querySelector(".cursor-inner");
+        const cursor2 = document.querySelector(".cursor-outer");
+        document.addEventListener("mousemove", e=>{
+            cursor.style.top = e.pageY + "px";
+            cursor.style.left = e.pageX + "px";
+ 
+            cursor2.style.top = e.pageY + "px";
+            cursor2.style.left = e.pageX + "px";
+        })
+    </script>
+</body>
+</html>
