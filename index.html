@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="welcome.css">
+    <!-- <style type="text/css">       
+        a{
+          cursor: url("https://1.bp.blogspot.com/-NmbnDADABUE/XSfhUk_X2yI/AAAAAAAAFFw/5Tp7zt_8erg2AJ-aQ1VhYdH_l4nTReY7wCLcBGAs/s1600/cursor.png"), default;
+        }
+      </style> -->
+</head>
+<body>
+    <h1>Java Game</h1>
+    <br><br><br><br>
+    <div class="images_home">
+        <img src="warIMG1.jpg" alt="WAR" width="400" height="300">
+        <img src="warIMG2.jpeg" alt="WAR" width="400" height="300">
+    </div>
+    <br><br>
+    <div class="intro">
+    The world is at war!
+    </div>
+    <br> <br>
+    <br><br>
+    <div class="intro">
+    You have been selected to fight for your country...<br> <br><br><br>
+    </div>
+    <div class="intro">
+    Do you have what it takes?
+    </div>
+    <br><br><br><br>
+    <div class="intro">
+    If yes, then click below to head to war!
+    </div>
+    <br><br><br><br>
+    </div>
+    <div class="play">
+        <a href="paths.html">Start</a>
+    </div>
+    <br><br><br>
+    <div class="cursor-outer"></div>
+    <div class="cursor-inner"></div>
+    <script>
+        const cursor = document.querySelector(".cursor-inner");
+        const cursor2 = document.querySelector(".cursor-outer");
+        document.addEventListener("mousemove", e=>{
+            cursor.style.top = e.pageY + "px";
+            cursor.style.left = e.pageX + "px";
+ 
+            cursor2.style.top = e.pageY + "px";
+            cursor2.style.left = e.pageX + "px";
+        })
+    </script>
+</body>
+</html>

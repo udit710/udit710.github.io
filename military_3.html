@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="author" content="Pat">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Military Question 3</title>
+        <link rel="stylesheet" href="milQ.css">
+    </head>
+    <body>
+        <header><h1>Military: Question 3</h1></header>
+        <br>
+        <div class="retry">
+            <a href="index.html">Restart Game</a>
+            </div><br><br><br>
+        <div class="txt">
+        <section>
+        <p>
+            <pre>
+public class moleIndentification {
+    
+   public static int soldierAnswer(Random answer) {
+        int r = answer.nextInt(10);
+        return r;
+    }
+   
+   public static void main(String[] args) {
+      Scanner soldierInfo = new Scanner(System.in);
+      Random answer = new Random();
+      
+      System.out.println("Enter the number of soldiers: ");
+      String numSoldiers = soldierInfo.nextInt();
+
+        for (int i = 0; i < numSoldiers; i++) {
+            int ans = (soldierAnswer(answer));
+            System.out.println("Soldier " + (i + 1) + "'s answer is " + ans);
+            if (ans > 7) {
+                System.out.println("Soldier " + (i + 1) + " is the MOLE...");
+                break;
+            }
+            else {
+                continue;
+            }
+        }
+        
+      
+   }
+}
+            </pre>
+        </p>
+        </section>
+        </div>
+        <div class="ques">
+        <section>
+        <p>
+            <pre>
+        There is possibility of a mole in the cadet, time to find out...
+  
+        Which index soldier is a mole if the input is: 5
+        And the numbers generater are: 4 5 0 9 7
+            </pre>
+        </p>
+        </section>
+        </div>
+        <div class="options">
+            <section>
+                <p>
+                    <pre>
+        <a href="military_3_wrong_answer.html" style="margin: 20px;padding: 20px;background-color: white;">4</a>
+        <br><br>
+        <a href="military_3_wrong_answer.html" style="margin: 20px;padding: 20px;background-color: white;">3</a>
+        <br><br>
+        <a href="military_4.html" style="margin: 20px;padding: 20px;background-color: white;">The compiler will show an Error</a>
+        <br><br>
+        <a href="military_3_wrong_answer.html" style="margin: 20px;padding: 20px;background-color: white;">5</a>
+            </pre>
+        </p>
+        </section>
+        </div>
+        <div class="cursor-outer"></div>
+    <div class="cursor-inner"></div>
+    <script>
+        const cursor = document.querySelector(".cursor-inner");
+        const cursor2 = document.querySelector(".cursor-outer");
+        document.addEventListener("mousemove", e=>{
+            cursor.style.top = e.pageY + "px";
+            cursor.style.left = e.pageX + "px";
+ 
+            cursor2.style.top = e.pageY + "px";
+            cursor2.style.left = e.pageX + "px";
+        })
+    </script>
+    </body>
+</html>

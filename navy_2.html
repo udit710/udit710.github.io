@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="author" content="Pat">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Navy Question 2</title>
+        <link rel="stylesheet" href="navyQ.css">
+    </head>
+    <body>
+
+        <header><h1>Navy: Question 2</h1></header>
+        <br>
+        <div class="retry">
+            <a href="index.html">Restart Game</a>
+            </div><br><br><br>
+        <div class="txt">
+        <section>
+        <p>
+            <pre>
+import java.util.Scanner;
+
+public class threatLevelDetection {
+    public static void main(String[] args) {
+        Scanner enemyInfo = new Scanner(System.in);
+        
+        System.out.println("Enter the number of enemy troops approaching(should be less than 100) : ");
+        int numEnemyTroops = enemyInfo.nextInt();
+        
+        int threatMultiplier;
+        System.out.println("Its just ships: ");
+        boolean justShips = enemyInfo.nextBoolean();
+        if (numEnemyTroops < 100) {
+            if (justShips != true) {
+                System.out.println("Enter the threat level: ");
+                threatMultiplier = enemyInfo.nextInt();
+                numEnemyTroops = numEnemyTroops * threatMultiplier;
+            }
+            
+            if (numEnemyTroops > 0 && numEnemyTroops < 250) {
+                System.out.println("The enemy threat level is Alpha (nothing to be worried about)");
+            }
+            else if (numEnemyTroops >= 250 && numEnemyTroops < 500) {
+                System.out.println("The enemy threat level is Bravo (a little effort is necessary)");
+            }
+            else if (numEnemyTroops >= 500 && numEnemyTroops < 750) {
+                System.out.println("The enemy threat level is Charlie (time to get serious)");
+            }
+            else if (numEnemyTroops >= 750) {
+                System.out.println("The enemy threat level is Delta (pray to god)");
+            }
+        }
+        else {
+            System.out.println("The enemy is overpowered...");
+        }
+        
+    }
+}
+            </pre>
+        </p>
+        </section>
+        </div>
+        <div class="ques">
+        <section>
+        <p>
+            <pre>
+        Its time to understand the threat level of the enemy attack..
+        What will the threat level be if the input is: 88
+                                                       false
+                                                       6
+            </pre>
+            </p>
+        </section>
+        </div>
+        <div class="options">
+        <section>
+            <p>
+                <pre>
+
+
+        <a href="navy_2_wrong_answer.html" style="margin: 20px;padding: 20px;background-color: white;">Alpha</a>
+        <br><br>
+        <a href="navy_2_wrong_answer.html" style="margin: 20px;padding: 20px;background-color: white;">The compiler will show an Error</a>
+        <br><br>
+        <a href="navy_2_wrong_answer.html" style="margin: 20px;padding: 20px;background-color: white;">Delta</a>
+        <br><br>
+        <a href="navy_3.html" style="margin: 20px;padding: 20px;background-color: white;">Charlie</a>
+        </pre>
+        </p>
+        </section>
+        </div>
+        <div class="cursor-outer"></div>
+    <div class="cursor-inner"></div>
+    <script>
+        const cursor = document.querySelector(".cursor-inner");
+        const cursor2 = document.querySelector(".cursor-outer");
+        document.addEventListener("mousemove", e=>{
+            cursor.style.top = e.pageY + "px";
+            cursor.style.left = e.pageX + "px";
+ 
+            cursor2.style.top = e.pageY + "px";
+            cursor2.style.left = e.pageX + "px";
+        })
+    </script>
+    </body>
+</html>

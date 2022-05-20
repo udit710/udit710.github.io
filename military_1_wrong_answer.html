@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="author" content="Pat">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wrong Answer!</title>
+        <link rel="stylesheet" href="milQ.css">
+    </head>
+    <body style ="background-color:red;">
+        <header><h1>Wrong Answer!</h1></header>
+        <br>
+        <div class="retry">
+        <a href="military_1.html">Try Again</a>
+        </div>
+        <div class="cursor-outer"></div>
+    <div class="cursor-inner"></div>
+    <script>
+        const cursor = document.querySelector(".cursor-inner");
+        const cursor2 = document.querySelector(".cursor-outer");
+        document.addEventListener("mousemove", e=>{
+            cursor.style.top = e.pageY + "px";
+            cursor.style.left = e.pageX + "px";
+ 
+            cursor2.style.top = e.pageY + "px";
+            cursor2.style.left = e.pageX + "px";
+        })
+    </script>
+    </body>
+</html>

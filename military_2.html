@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="author" content="Pat">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Military Question 2</title>
+        <link rel="stylesheet" href="milQ.css">
+    </head>
+    <body>
+        <header><h1>Military: Question 2</h1></header>
+        <br>
+        <div class="retry">
+            <a href="index.html">Restart Game</a>
+            </div><br><br><br>
+        <div class="txt">
+        <section>
+        <p>
+            <pre>
+import java.util.Scanner;
+
+public class deathCause {
+    public static void main(String[] args) {
+        Scanner battleInfo = new Scanner(System.in);
+        
+        System.out.println("The total number of causes of deaths so far: ");
+        int numCauses = battleInfo.nextInt();
+        
+        String[][] deathAndCause = new String[numCauses][2];
+        System.out.println("Enter the cause and the number of deaths due to it: ");
+        for (int i = 0; i < numCauses; ++i) {
+            deathAndCause[i][0] = battleInfo.next();
+            deathAndCause[i][1] = battleInfo.next();
+        }
+        
+        for(int i = 0; i < numCauses; ++i) {
+            for(int j = 0; j < deathAndCause[i][1].length(); ++j) {
+                if (!Character.isDigit(deathAndCause[i][1].charAt(j))) {
+                    System.out.println("The death count entered for " + deathAndCause[i][0] + " is invalid.");
+                }
+                else {
+                    System.out.println("Number of deaths due to " + deathAndCause[i][0] + ": " + deathAndCause[i][1]);
+                }
+            }
+        }
+        
+    }
+}
+            </pre>
+        </p>
+        </section>
+        </div>
+        <div class="ques">
+        <section>
+        <p>
+            <pre>
+        Its time to find the cause of the deaths...
+        What will be the number and cause for cause 3, if the input is: 4
+                                                                        485 infection 567 bloodloss 395 unknown 194 instant
+            </pre>
+        </p>
+        </section>
+        </div>
+        <div class="options">
+            <section>
+                <p>
+                    <pre>
+        <a href="military_2_wrong_answer.html" style="margin: 20px;padding: 20px;background-color: white;">567 bloodloss</a>
+        <br><br>
+        <a href="military_2_wrong_answer.html" style="margin: 20px;padding: 20px;background-color: white;">The compiler will show an Error</a>
+        <br><br>
+        <a href="military_2_wrong_answer.html" style="margin: 20px;padding: 20px;background-color: white;">Infection</a>
+        <br><br>
+        <a href="military_3.html" style="margin: 20px;padding: 20px;background-color: white;">Unknown</a>
+            </pre>
+        </p>
+        </section>
+        </div>
+        <div class="cursor-outer"></div>
+    <div class="cursor-inner"></div>
+    <script>
+        const cursor = document.querySelector(".cursor-inner");
+        const cursor2 = document.querySelector(".cursor-outer");
+        document.addEventListener("mousemove", e=>{
+            cursor.style.top = e.pageY + "px";
+            cursor.style.left = e.pageX + "px";
+ 
+            cursor2.style.top = e.pageY + "px";
+            cursor2.style.left = e.pageX + "px";
+        })
+    </script>
+    </body>
+</html>

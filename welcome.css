@@ -1,0 +1,311 @@
+:root{
+    --bg-color: black;
+    --speed: 5s;
+    --text-color: rgb(93, 240, 93);
+    --font-size: 20px;
+    --heading-size: 35px;
+}
+
+body{
+    background-size:cover ;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    min-height: 100px;
+     /* display: grid;
+    place-content: center;
+    text-align: center;
+    background: var(--bg-color); 
+    background-color: red; */
+    background-color: var(--bg-color);
+    cursor: none;
+}
+
+h1{
+    text-align: center;
+    font-size: var(--heading-size);
+    font-family:'Courier New', Courier, monospace;
+    color: var(--text-color);
+    text-transform: inherit;
+}
+.intro{
+    text-align: center;
+    font-family:monospace;
+    position: relative;
+    font-size: var(--font-size);
+    width: max-content;
+    margin:auto;
+    color: var(--text-color);
+    inline-size: auto;
+}
+.intro::before,
+.intro::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.intro::before{
+    background: var(--bg-color);
+    animation: typewriter var(--speed) steps(68) forwards;
+}
+.intro::after{
+    width: 0.125em;
+    background: var(--text-color);
+    max-height:var(--font-size) ;
+    animation: typewriter var(--speed) steps(48) forwards,
+    blink 500ms steps(48) infinite;
+}
+
+@keyframes typewriter{
+    to{
+        left: 100%;
+    }
+}
+@keyframes blink{
+    to{
+        background: transparent;
+    }
+}
+@keyframes bringup{
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* .intro2{
+    text-align: center;
+    font-family:monospace;
+    position: relative;
+    font-size: xx-large;
+    width: max-content;
+    margin:auto;
+    color: var(--text-color);
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: bringup 2s ease calc(var(--speed) + 2) forwards;
+}
+.intro2::before,
+.intro2::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.intro2::before{
+    background: var(--bg-color);
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: bringup 2s ease calc(var(--speed) + 2) forwards;
+}
+.intro2::after{
+    width: 0.125em;
+    background: red;
+    max-height:1cm ;
+    animation: typewriter var(--speed) steps(48) forwards,
+    blink 700ms steps(48) infinite;
+}
+
+@keyframes typewriter{
+    to{
+        left: 100%;
+    }
+}
+@keyframes blink{
+    to{
+        background: transparent;
+    }
+}
+@keyframes bringup{
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.intro3{
+    text-align: center;
+    font-family:monospace;
+    position: relative;
+    font-size: xx-large;
+    width: max-content;
+    margin:auto;
+    color: var(--text-color);
+}
+.intro3::before,
+.intro3::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.intro3::before{
+    background: var(--bg-color);
+    animation: typewriter var(--speed) steps(68) forwards;
+}
+.intro3::after{
+    width: 0.125em;
+    background: red;
+    max-height:1cm ;
+    animation: typewriter var(--speed) steps(48) forwards,
+    blink 700ms steps(48) infinite;
+}
+
+@keyframes typewriter{
+    to{
+        left: 100%;
+    }
+}
+@keyframes blink{
+    to{
+        background: transparent;
+    }
+}
+@keyframes bringup{
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.intro4{
+    text-align: center;
+    font-family:monospace;
+    position: relative;
+    font-size: xx-large;
+    width: max-content;
+    margin:auto;
+    color: var(--text-color);
+}
+.intro4::before,
+.intro4::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.intro4::before{
+    background: var(--bg-color);
+    animation: typewriter var(--speed) steps(68) forwards;
+}
+.intro4::after{
+    width: 0.125em;
+    background: red;
+    max-height:1cm ;
+    animation: typewriter var(--speed) steps(48) forwards,
+    blink 700ms steps(48) infinite;
+}
+
+@keyframes typewriter{
+    to{
+        left: 100%;
+    }
+}
+@keyframes blink{
+    to{
+        background: transparent;
+    }
+}
+@keyframes bringup{
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+} */
+.play{
+    text-align: center;
+    font-family:monospace;
+    font-size: var(--font-size );
+    width: max-content;
+    margin:auto;
+    color: var(--text-color);
+    padding: 0 0 0 0;
+    border: thick double orange;
+}
+.images_home{
+    text-align: center;
+    font-style:italic;
+    padding: 0 30px 0 30px;
+    font-weight: 500;
+    color: chocolate;
+    font-size: var(--font-size);
+    object-fit: contain;
+}
+/* welcome page ends */
+/*  */
+/*  */
+/* page 1 starts */
+img {
+    border: 10px ridge green;
+    height: 300px;
+    max-width: 100%;
+    object-fit:cover;
+    page-break-inside: auto;
+}
+.images{
+    text-align:center;
+    font-style:italic;
+    font-weight: 500;
+    margin: 0 1cm 10cm 0cm;
+    color: chocolate;
+    font-size: var(--font-size);
+
+}
+h2{
+    font-size: 12px;
+    color: chocolate;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+[class^="cursor"]{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    z-index: 9999;
+    pointer-events: none;
+}
+.cursor-outer{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+    transition: all .08s ease-out;
+}
+.cursor-inner{
+    width: 7px;
+    height: 7px;
+    background: #fff;
+}
+.intro:hover ~ .cursor-outer{
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    mix-blend-mode: difference;
+}
+.intro:hover ~ .cursor-inner{
+    opacity: 0;
+}
+h1:hover ~ .cursor-outer{
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    mix-blend-mode: difference;
+}
+h1:hover ~ .cursor-inner{
+    opacity: 0;
+}
+.images:hover ~ .cursor-outer{
+    width: 90px;
+    height: 90px;
+    background: rgb(0, 0, 0);
+    mix-blend-mode: difference;
+}
+.images:hover ~ .cursor-inner{
+    opacity: 0;
+}

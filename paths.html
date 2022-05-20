@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="welcome.css">
+</head>
+<body>
+
+<h1>Pick a path</h1>
+<hr>
+<h2>(Click on the image to start)</h2>
+<br><br><br>
+<div class="images">
+    Navy:
+    <br><br>
+        <a href="navy_1.html"><img src="https://navalpost.com/wp-content/uploads/2021/05/Submerged_submarine.jpg" alt="Submarine_photo" width = "400" height = "300">
+        </a>
+        <br><br><br><br>
+        
+        Army: 
+        <br><br>
+        <a href="military_1.html">
+        <img src="https://pbs.twimg.com/media/CrRZRd1W8AAV8Xr.jpg" alt="Tank_photo" width = "400" height = "300"> 
+        </a><br><br><br><br>
+        Airforce:
+        <br><br>
+        <a href="air_force_1.html">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Lockheed_Martin_F-22_Raptor_%2709-191_-_FF%27_%2827585274634%29.jpg/1200px-Lockheed_Martin_F-22_Raptor_%2709-191_-_FF%27_%2827585274634%29.jpg" alt="Fighter_jet_photo" width="400" height="300">
+        </a>
+</div>
+<div class="cursor-outer"></div>
+    <div class="cursor-inner"></div>
+    <script>
+        const cursor = document.querySelector(".cursor-inner");
+        const cursor2 = document.querySelector(".cursor-outer");
+        document.addEventListener("mousemove", e=>{
+            cursor.style.top = e.pageY + "px";
+            cursor.style.left = e.pageX + "px";
+ 
+            cursor2.style.top = e.pageY + "px";
+            cursor2.style.left = e.pageX + "px";
+        })
+    </script>
+</body>
+</html>

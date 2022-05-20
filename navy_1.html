@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="author" content="Pat">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Navy Question 1</title>
+        <link rel="stylesheet" href="navyQ.css">
+    </head>
+    <body>
+    
+        <header><h1>Navy: Question 1</h1></header>
+        <br>
+        <div class="retry">
+            <a href="index.html">Restart Game</a>
+            </div><br><br><br>
+        <div class="txt">
+        <section>
+        <p>
+            <pre>
+import java.util.Scanner;
+
+public class rankingOfficers {
+    public static void main (String[] args) {
+        Scanner sailorInfo = new Scanner(System.in);
+        
+        System.out.println("Enter the first name of the sailor: ");
+        String sailorFirstName = sailorInfo.nextLine();
+        sailorFirstName = sailorFirstName.toUpperCase();
+        System.out.println("Enter the last name of the sailor: ");
+        String sailorLastName = sailorInfo.nextLine();
+        sailorLastName = sailorLastName.toUpperCase();
+        String sailorFullName = sailorFirstName + " " + sailorLastName;
+        System.out.println("\n Sailor's full name: " + sailorFullName);
+        
+        System.out.println("Enter the rank of the sailor: ");
+        String rank = sailorInfo.nextLine();
+        
+        switch (rank) {
+            case "seamen": 
+                System.out.println("SMN " + sailorFullName);
+                break;
+            case "able seamen": 
+                System.out.println("AB " + sailorFullName);
+                break;
+            case "leading seamen": 
+                System.out.println("LS " + sailorFullName);
+                break;
+            case "petty officer": 
+                System.out.println("PO " + sailorFullName);
+                break;
+            case "chief petty officer": 
+                System.out.println("CPO " + sailorFullName);
+                break;
+            case "warrant officer": 
+                System.out.println("WO " + sailorFullName);
+                break;
+            case "warrant officer of the navy": 
+                System.out.println("WO-N " + sailorFullName);
+                break;
+            default: 
+                System.out.println("No Such Rank Exists");
+                break;
+        }
+        
+    }
+}
+            </pre>
+        </p>
+        </section>
+        </div>
+        <div class="ques">
+        <section>
+        <p>
+            <pre>
+        Its time to provide the rank to the sailors...
+        What will be the output if the input is: john 
+                                                 tucker
+                                                 leading seamen
+            </pre>
+            </p>
+        </section>
+        </div>
+        <div class="options">
+        <section>
+            <p>
+                <pre>
+            
+        
+        <a href="navy_1_wrong_answer.html" style="margin: 20px;padding: 20px;background-color: white;">LS John tucker</a>
+        <br><br>
+        <a href="navy_2.html" style="margin: 20px;padding: 20px;background-color: white;">The compiler will show an Error</a>
+        <br><br>
+        <a href="navy_1_wrong_answer.html" style="margin: 20px;padding: 20px;background-color: white;">LS JOHN TUCKER</a>
+        <br><br>
+        <a href="navy_1_wrong_answer.html" style="margin: 20px;padding: 20px;background-color: white;">Ls JOHN TUCKER</a>
+        </pre>
+        </p>
+        </section>
+        </div>
+        <div class="cursor-outer"></div>
+    <div class="cursor-inner"></div>
+    <script>
+        const cursor = document.querySelector(".cursor-inner");
+        const cursor2 = document.querySelector(".cursor-outer");
+        document.addEventListener("mousemove", e=>{
+            cursor.style.top = e.pageY + "px";
+            cursor.style.left = e.pageX + "px";
+ 
+            cursor2.style.top = e.pageY + "px";
+            cursor2.style.left = e.pageX + "px";
+        })
+    </script>
+    </body>
+</html>

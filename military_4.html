@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="author" content="Pat">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Military Question 4</title>
+        <link rel="stylesheet" href="milQ.css">
+    </head>
+    <body>
+        <header><h1>Military: Question 4</h1></header>
+        <br>
+        <div class="retry">
+            <a href="index.html">Restart Game</a>
+            </div><br><br><br>
+        <div class="txt">
+        <section>
+        <p>
+            <pre>
+import java.util.Scanner;
+
+public class moleExecution {
+    public static void main(String[] args) {
+        Scanner soldierVal = new Scanner(System.in);
+        
+        System.out.println("Enter the number of soldier checked: ");
+        int numSoldier = soldierVal.nextInt();
+        
+        int[] soldierAns = new int[numSoldier];
+        System.out.println("Enter the one-digit value by each soldier: ");
+        for (int i = 0; i < numSoldier; ++i) {
+            int temp = soldierVal.nextInt();
+            if (temp < 7) {
+                soldierAns[i] = temp;
+            }
+            else{
+                soldierAns[i] = -1
+            }
+        
+            
+        }
+        System.out.print("BEFORE... The assembled soliders: The Executioner => ");
+        for (int i = 0; i < numSoldier; ++i) {
+            System.out.print(soldierAns[i] + " ");
+        }
+        
+        System.out.println("\n" + "Bring forth the mole");
+        int tempAns = 0;
+        for (int i = 0; i < numSoldier; ++i) {
+            if (soldierAns[i] == -1) {
+                tempAns = soldierAns[0];
+                soldierAns[0] = -1;
+                soldierAns[i] = tempAns;
+            }
+        }
+        
+        System.out.print("AFTER... The assembled soldiers: The executioner => ");
+        for (int i = 0; i < numSoldier; ++i) {
+            System.out.print(soldierAns[i] + " ");
+        }
+    }
+}
+            </pre>
+        </p>
+        </section>
+        </div>
+        <div class="ques">
+        <section>
+        <p>
+            <pre>
+        The mole has been identified , time to bring him forth and execute him...
+        How many poisitions did the mole move by, if the input is: 4
+                                                                   6 7 8 5
+            </pre>
+        </p>
+        </section>
+        </div>
+        <div class="options">
+            <section>
+                <p>
+                    <pre>
+        <a href="military_5.html" style="margin: 20px;padding: 20px;background-color: white;">The compiler will show an Error</a>
+        <br><br>
+        <a href="military_4_wrong_answer.html" style="margin: 20px;padding: 20px;background-color: white;">1</a>
+        <br><br>
+        <a href="military_4_wrong_answer.html" style="margin: 20px;padding: 20px;background-color: white;">2</a>
+        <br><br>
+        <a href="military_4_wrong_answer.html" style="margin: 20px;padding: 20px;background-color: white;">3</a>
+            </pre>
+        </p>
+        </section>
+        </div>
+        <div class="cursor-outer"></div>
+    <div class="cursor-inner"></div>
+    <script>
+        const cursor = document.querySelector(".cursor-inner");
+        const cursor2 = document.querySelector(".cursor-outer");
+        document.addEventListener("mousemove", e=>{
+            cursor.style.top = e.pageY + "px";
+            cursor.style.left = e.pageX + "px";
+ 
+            cursor2.style.top = e.pageY + "px";
+            cursor2.style.left = e.pageX + "px";
+        })
+    </script>
+    </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="author" content="Pat">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Air Force Question 2</title>
+        <link rel="stylesheet" href="airQ.css">
+    </head>
+    <body>
+        <h1>Air Force: Question 2</h1>
+        <br>
+        <div class="retry">
+            <a href="index.html">Restart Game</a>
+            </div><br><br><br>
+        <div class="txt">
+        <section>
+        <p>
+            <pre>
+import java.util.Scanner;
+
+public class jetSpeed {
+    
+    public static double KmToM(double speedInKmph) {
+        double speedInMph = speedInKmph * 0.62;
+    }
+    
+    public static void main(String[] args) {
+        Scanner enemyJetInfo = new Scanner(System.in);
+        System.out.println("Enter speed in Km/Hr: ");
+        double speedInKmph = enemyJetInfo.nextDouble();
+        double speedInMph = KmToM(speedInKmph);
+        
+        System.out.println("Speed in Miles/Hr: " + speedInMph);
+    }
+}
+            </pre>
+        </p>
+        </section>
+        </div>
+        <div class="ques">
+        <section>
+        <p>
+            <pre>
+        Its time to check the speed of your jets in your national metric units...
+        What will be the output if the input is: 1.0 
+            </pre>
+        </p>
+        </section>
+        </div>
+        <div class="options">
+            <section>
+                <p>
+                    <pre>
+
+        <a href="air_force_2_wrong_answer.html" style="margin: 20px;padding: 20px;background-color: white;">1.0</a>
+        <br><br>
+        <a href="air_force_2_wrong_answer.html" style="margin: 20px;padding: 20px;background-color: white;">0.62</a>
+        <br><br>
+        <a href="air_force_3.html" style="margin: 20px;padding: 20px;background-color: white;">The compiler will show an Error</a>
+        <br><br>
+        <a href="air_force_2_wrong_answer.html" style="margin: 20px;padding: 20px;background-color: white;">62.0</a>
+            </pre>
+        </p>
+        </section>
+        </div>
+        <div class="cursor-inner"></div>
+        <script>
+            const cursor = document.querySelector(".cursor-inner");
+            const cursor2 = document.querySelector(".cursor-outer");
+            document.addEventListener("mousemove", e=>{
+                cursor.style.top = e.pageY + "px";
+                cursor.style.left = e.pageX + "px";
+     
+                cursor2.style.top = e.pageY + "px";
+                cursor2.style.left = e.pageX + "px";
+            })
+        </script>
+    </body>
+</html>
