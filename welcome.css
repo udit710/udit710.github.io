@@ -233,7 +233,7 @@ h1{
     margin:auto;
     color: var(--text-color);
     padding: 0 0 0 0;
-    border: thick double orange;
+    border: thick double var(--text-color);
 }
 .images_home{
     text-align: center;
@@ -325,4 +325,12 @@ footer{
     margin: 0 0 0 80%;
     inline-size: auto;
     object-fit: contain;
+}
+button{
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    font-size: 15px;
+    background-color: var(--text-color);
+    /* border-radius: 20px; */
 }
