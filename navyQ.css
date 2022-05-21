@@ -34,7 +34,7 @@ h1{
     font-family: Arial, Helvetica, sans-serif;
     border: #fff;
     padding: 10px;
-
+    border-radius: 30px;
 }
 *{
     box-sizing: border-box;
@@ -45,6 +45,7 @@ h1{
     margin: 20px;
     border: #fff;
     padding: 10px;
+    border-radius: 30px;
 }
 .options{
     color: var(--text-color);
@@ -52,6 +53,7 @@ h1{
     margin: 20px;
     border: #fff;
     padding: 10px;
+    border-radius: 30px;
 }
 [class^="cursor"]{
     position: absolute;
