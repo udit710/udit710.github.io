@@ -1,0 +1,89 @@
+/* :root{
+    --chakra-color: rgb(141, 141, 223);
+    --chakra-bg: rgb(0, 0, 0);
+    --chakra-heading: rgb(141, 141, 223);
+    --chakra-text: white;
+    --chakra-body: rgb(0, 0, 0);
+}
+*/
+.nav{
+    background: rgba(123, 241, 216, 0.523);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.page{
+    background: rgb(0, 0, 0);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 40px;
+    padding-right: 15%;
+    padding-left: 15%;
+}
+/*
+.h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+.contact{
+    color: rgb(141, 141, 223);
+    font-size: 30px;
+    text-align: center;
+}
+
+.intro{
+    color: white;
+    font-size: 40px;
+    text-align: left;
+}
+
+.intro-parah{
+    font-size: smaller;
+}
+
+.skills{
+    text-align: left;
+    font-size: 25px;
+}
+
+.my_title{
+    color: red;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.point{
+    color: white; 
+}
+*/
+footer{
+    position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: right;
+}
+/*
+.animate{
+  rotate: 270deg;
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  position: relative;
+  animation: myfirst 5s 1;
+  animation-direction: normal;
+}
+
+
+@keyframes myfirst {
+    0%   {background: transparent; left: 0px; top: 0px;}
+    25%  {background: transparent; left: 200px; top: 0px;}
+}
+
+img .fire{
+    image-orientation: 180deg;
+    rotate: 270deg;
+} */

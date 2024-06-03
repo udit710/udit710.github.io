@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
   ChakraProvider,
   Box,
@@ -12,64 +12,33 @@ import {
   WrapItem,
   useColorMode,
   useColorModeValue,
-  IconButton,
-  Image,
-  Button
+  IconButton
 } from "@chakra-ui/react";
 import { FaGithub, FaEnvelope, FaMapMarkerAlt, FaSun, FaMoon } from "react-icons/fa";
-import { TypeAnimation } from 'react-type-animation';
 
-const App = () => {
-  // const [lightMode,setLightMode] = useState(false);
-
-  const { colorMode, toggleColorMode } = useColorMode();
+const Here = () => {
+  const { toggleColorMode } = useColorMode();
+  const colorMode = useColorModeValue("light", "dark");
 
   return (
     <ChakraProvider>
       <Box p={5}>
         <Center mb={5}>
-          {/* <IconButton
+          <IconButton
             aria-label="Toggle Color Mode"
-            icon={lightMode === true ? <FaMoon /> : <FaSun />}
-            onClick={() => setLightMode(!lightMode)}
-          /> */}
-          <Button onClick={toggleColorMode}>
-        Toggle {colorMode === 'light' ? 'Dark' : 'Light'}
-      </Button>
+            icon={colorMode === "light" ? <FaMoon /> : <FaSun />}
+            onClick={toggleColorMode}
+          />
         </Center>
         <Center>
-          {/* <Box> */}
-          <Image src="/assets/udit.jpeg" alt="My picture" />
-          {/* </Box> */}
-        </Center>
-        <Center>
-          <Heading as="h1" size="2xl" fontFamily="sans-serif">Hi, I am Udit</Heading>
-        </Center>
-        <Center>
-          {/* const variable = ["Web Developer 👨🏻‍💻", "Backend Developer ⚙️", "App Developer 📱", "Soccer Enthusiast ⚽️", "Gym Rat 💪🏻"]; */}
-        <TypeAnimation
-          sequence={[
-            // Same substring at the start will only be typed once, initially
-            'I am a Software Developer',
-            1000,
-            'I am an iOS Developer',
-            1000,
-            'I am a Machine Learning Enthusiast',
-            1000,
-            'I enjoy everything tech',
-            1000,
-          ]}
-          speed={50}
-          style={{ fontSize: '2em' }}
-          repeat={Infinity}
-        />
+          <Heading as="h1" size="2xl">Hi, I am "Name"</Heading>
         </Center>
         <Center mt={3}>
-          <Link href="https://github.com/udit710" isExternal>
+          <Link href="https://github.com/username" isExternal>
             <FaGithub size="30px" />
           </Link>
           <Box mx={2} />
-          <Link href="mailto:udit.malshe10@outlook.com">
+          <Link href="mailto:email@example.com">
             <FaEnvelope size="30px" />
           </Link>
           <Box mx={2} />
@@ -79,7 +48,7 @@ const App = () => {
         </Center>
         <Box mt={5} p={5} borderWidth={1} borderRadius="lg">
           <Text>
-          A versatile and proactive software enthusiast, excelling in dynamic team environments. My keen ability to adapt to evolving challenges and my ever-growing hunger for learning set me apart. I thrive on social interactions like attending code nights and meet-ups, bringing not only strong technical skills but also a collaborative and engaging presence to any project. With my deep understanding of web and app development, I am poised to make a signiVicant and unique contribution to the Vield of software development.
+            Insert brief intro paragraph about me here. This is a description of who I am, my hobbies, profession, and interests.
           </Text>
         </Box>
         <Box mt={5}>
@@ -92,36 +61,6 @@ const App = () => {
               </Box>
             </WrapItem>
             {/* Add more skills as needed */}
-            <WrapItem>
-              <Box p={5} shadow="md" borderWidth="1px" flex="1" borderRadius="md">
-                <Heading fontSize="xl">CI/CD</Heading>
-                <Text mt={4}>GitHub Actions, Git</Text>
-              </Box>
-            </WrapItem>
-            <WrapItem>
-              <Box p={5} shadow="md" borderWidth="1px" flex="1" borderRadius="md">
-                <Heading fontSize="xl">Key Programming Languages</Heading>
-                <Text mt={4}>Python, Javascript and Java</Text>
-              </Box>
-            </WrapItem>
-            <WrapItem>
-              <Box p={5} shadow="md" borderWidth="1px" flex="1" borderRadius="md">
-                <Heading fontSize="xl">App Development</Heading>
-                <Text mt={4}>Swift (iOS, iPadOS), SwiftUI, UIKit, WidgetKit, CoreData</Text>
-              </Box>
-            </WrapItem>
-            <WrapItem>
-              <Box p={5} shadow="md" borderWidth="1px" flex="1" borderRadius="md">
-                <Heading fontSize="xl">Backend Development</Heading>
-                <Text mt={4}>API development, Spring-boot, Javalin, JDBC</Text>
-              </Box>
-            </WrapItem>
-            <WrapItem>
-              <Box p={5} shadow="md" borderWidth="1px" flex="1" borderRadius="md">
-                <Heading fontSize="xl">More</Heading>
-                <Text mt={4}>Communication, SQLite, Agile Development, Problem Solving, Object Oriented Programming(OOP), C++, Swift StoryBoards, DSA, XCTests, JUnit, Kali Linux, NumPy, Pandas,MySQL, MVC, MV, MVVM, AWS EC2, AWS Beanstalk, JWT, Docker, Axios, Solidity, Smart-Contracts.</Text>
-              </Box>
-            </WrapItem>
           </Wrap>
         </Box>
         <Box mt={5}>
@@ -195,4 +134,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Here;
