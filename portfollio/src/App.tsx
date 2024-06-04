@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import {
   ChakraProvider,
   Box,
@@ -14,55 +14,98 @@ import {
   useColorModeValue,
   IconButton,
   Image,
-  Button
+  Grid,
+  HStack,
+  Spacer,
+  Button,
+  Flex,
+  VStack,
+  GridItem
 } from "@chakra-ui/react";
 import { FaGithub, FaEnvelope, FaMapMarkerAlt, FaSun, FaMoon } from "react-icons/fa";
 import { TypeAnimation } from 'react-type-animation';
+import udit from  "./assets/udit.jpeg";
+import cloudsbg from "./assets/cloudsbg.jpg"
+import theme from './theme';
+import './App.css'
 
-const App = () => {
-  // const [lightMode,setLightMode] = useState(false);
+const App: React.FC = () => {
 
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { toggleColorMode } = useColorMode();
+  const colorMode = useColorModeValue("light", "dark");
 
+  const [isSticky, setIsSticky] = useState(false);
+  const [opacity, setOpacity] = useState(1); // Initial opacity (fully visible)
+  const navbarRef = useRef<HTMLDivElement>(null);
+
+  const handleScroll = () => {
+    const windowScrollY = window.scrollY;
+    const navbarHeight = navbarRef.current?.offsetHeight || 0; // Handle potential null reference
+
+    setIsSticky(windowScrollY > navbarHeight);
+
+    // Calculate opacity based on scroll position (adjust as needed)
+    const scrollThreshold = 100; // Adjust this threshold to control opacity change sensitivity
+    const newOpacity = Math.max(
+      0.3, // Ensure opacity doesn't go below 0
+      1 - windowScrollY / scrollThreshold
+    );
+    setOpacity(newOpacity);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  
   return (
-    <ChakraProvider>
-      <Box p={5}>
-        <Center mb={5}>
-          {/* <IconButton
-            aria-label="Toggle Color Mode"
-            icon={lightMode === true ? <FaMoon /> : <FaSun />}
-            onClick={() => setLightMode(!lightMode)}
-          /> */}
-          <Button onClick={toggleColorMode}>
-        Toggle {colorMode === 'light' ? 'Dark' : 'Light'}
-      </Button>
-        </Center>
+    
+    <ChakraProvider theme={theme}>
+        <Image
+        src={cloudsbg}
+        alt='bg'
+        z-index={-1}
+        pos={'absolute'}
+        width={"100%"}
+         />
+      <Box p={5} h="100%" >
+      <VStack>
+      <Box ref={navbarRef} as="nav" bg={colorMode === "dark" ? "gray.200" : "gray.900"} p={4} mb={8} borderRadius={20} borderWidth="2px" pos={'fixed'} opacity={opacity} transition="opacity 0.2s ease-in-out" >
+          <HStack spacing={8} justifyContent="center">
+            <Link href="#about">About</Link>
+            <Link href="#skills">Key Skills</Link>
+            <Link href="#achievements">Achievements</Link>
+            <Link href="#projects">Projects</Link>
+            <Link href="#voluntary">Voluntary Work</Link>
+            <Link href="#hobbies">Hobbies</Link>
+            <Link href="#education">Education</Link>
+            <Spacer />
+          </HStack>
+        </Box>
+        {/* <Center mb={5}>
+          <IconButton
+          aria-label="Toggle Color Mode"
+          icon={colorMode === "light" ? <FaMoon /> : <FaSun />}
+          onClick={toggleColorMode}
+          />
+        </Center> */}
+        <Box pt="10%" pb="15%">
         <Center>
-          {/* <Box> */}
-          <Image src="/assets/udit.jpeg" alt="My picture" />
-          {/* </Box> */}
+          <Box>
+          <Image
+            borderRadius='full'
+            boxSize='150px'
+            bg={colorMode === "dark" ? "black" : "white"}
+            p='3px'
+            src={udit}
+            alt='Udit'
+            />
+          </Box>
         </Center>
         <Center>
           <Heading as="h1" size="2xl" fontFamily="sans-serif">Hi, I am Udit</Heading>
-        </Center>
-        <Center>
-          {/* const variable = ["Web Developer 👨🏻‍💻", "Backend Developer ⚙️", "App Developer 📱", "Soccer Enthusiast ⚽️", "Gym Rat 💪🏻"]; */}
-        <TypeAnimation
-          sequence={[
-            // Same substring at the start will only be typed once, initially
-            'I am a Software Developer',
-            1000,
-            'I am an iOS Developer',
-            1000,
-            'I am a Machine Learning Enthusiast',
-            1000,
-            'I enjoy everything tech',
-            1000,
-          ]}
-          speed={50}
-          style={{ fontSize: '2em' }}
-          repeat={Infinity}
-        />
         </Center>
         <Center mt={3}>
           <Link href="https://github.com/udit710" isExternal>
@@ -77,12 +120,43 @@ const App = () => {
             <FaMapMarkerAlt size="30px" />
           </Link>
         </Center>
+        <Center>
+          {/* const variable = ["Web Developer 👨🏻‍💻", "Backend Developer ⚙️", "App Developer 📱", "Soccer Enthusiast ⚽️", "Gym Rat 💪🏻"]; */}
+        <TypeAnimation
+          sequence={[
+            // Same substring at the start will only be typed once, initially
+            'I am a Software Developer',
+            1000,
+            'I am a tech enthusiast',
+            1000,
+          ]}
+          speed={50}
+          style={{ fontSize: '2em' }}
+          repeat={Infinity}
+        />
+        </Center>
+        </Box>
+        {/* </GlowingStarsBackgroundCard> */}
+        </VStack>
+        </Box>
+       {/* <Box mt={5} id="about">
+       <Heading as="h2" size="lg">About</Heading>
         <Box mt={5} p={5} borderWidth={1} borderRadius="lg">
           <Text>
           A versatile and proactive software enthusiast, excelling in dynamic team environments. My keen ability to adapt to evolving challenges and my ever-growing hunger for learning set me apart. I thrive on social interactions like attending code nights and meet-ups, bringing not only strong technical skills but also a collaborative and engaging presence to any project. With my deep understanding of web and app development, I am poised to make a signiVicant and unique contribution to the Vield of software development.
           </Text>
         </Box>
-        <Box mt={5}>
+        </Box> */}
+        <Box id="about">
+        <div className="about">
+        <Box border={'2px'} p={5} borderRadius={20} m={15}>
+          <Text>
+            A versatile and proactive software enthusiast, excelling in dynamic team environments. My keen ability to adapt to evolving challenges and my ever-growing hunger for learning set me apart. I thrive on social interactions like attending code nights and meet-ups, bringing not only strong technical skills but also a collaborative and engaging presence to any project. With my deep understanding of web and app development, I am poised to make a significant and unique contribution to the Vield of software development.
+          </Text>
+          </Box>
+        </div>
+        </Box>
+        <Box mt={5} id="skills">
           <Heading as="h2" size="lg">Key Skills</Heading>
           <Wrap mt={3}>
             <WrapItem>
@@ -124,7 +198,7 @@ const App = () => {
             </WrapItem>
           </Wrap>
         </Box>
-        <Box mt={5}>
+        <Box mt={5} id="achievements">
           <Heading as="h2" size="lg">Achievements</Heading>
           <Box mt={3} p={5} shadow="md" borderWidth="1px" borderRadius="md">
             <Heading fontSize="xl">2nd Prize in CodeQuest 2023</Heading>
@@ -134,7 +208,7 @@ const App = () => {
             </Text>
           </Box>
         </Box>
-        <Box mt={5}>
+        <Box mt={5} id="projects">
           <Heading as="h2" size="lg">Projects</Heading>
           <Wrap mt={3}>
             <WrapItem>
@@ -166,7 +240,7 @@ const App = () => {
             </WrapItem>
           </Wrap>
         </Box>
-        <Box mt={5}>
+        <Box mt={5} id="voluntary">
           <Heading as="h2" size="lg">Voluntary Work</Heading>
           <Box mt={3} p={5} shadow="md" borderWidth="1px" borderRadius="md">
             <Heading fontSize="xl">Organising Committee Member</Heading>
@@ -177,12 +251,15 @@ const App = () => {
             <Text mt={4}>Google Development Group (GDG) HackNights by Mantel Group</Text>
           </Box>
         </Box>
+        <Box mt={5} id="hobbies">
+          <Heading as="h2" size="lg">Hobbies & Interests</Heading>
         <Box mt={5} p={5} borderWidth={1} borderRadius="lg">
           <Text>
             Insert hobbies and interests paragraph here. This is a description of my hobbies and interests.
           </Text>
         </Box>
-        <Box mt={5}>
+        </Box>
+        <Box mt={5} id="education">
           <Heading as="h2" size="lg">Education</Heading>
           <Box mt={3} p={5} shadow="md" borderWidth="1px" borderRadius="md">
             <Text>
@@ -190,7 +267,7 @@ const App = () => {
             </Text>
           </Box>
         </Box>
-      </Box>
+      {/* </Box> */}
     </ChakraProvider>
   );
 };

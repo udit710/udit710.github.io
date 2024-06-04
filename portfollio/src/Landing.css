@@ -5,7 +5,7 @@
     --chakra-text: white;
     --chakra-body: rgb(0, 0, 0);
 }
-*/
+
 .nav{
     background: rgba(123, 241, 216, 0.523);
     padding: 20px;
@@ -15,7 +15,7 @@
 .page{
     background: rgb(0, 0, 0);
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
+    color: #1d1d1d;
     font-size: 40px;
     padding-right: 15%;
     padding-left: 15%;
@@ -57,7 +57,7 @@
 .point{
     color: white; 
 }
-*/
+
 footer{
     position: fixed;
   left: 0;
