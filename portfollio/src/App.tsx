@@ -27,6 +27,7 @@ import { TypeAnimation } from 'react-type-animation';
 import udit from  "./assets/udit.jpeg";
 import cloudsbg from "./assets/cloudsbg.jpg"
 import theme from './theme';
+import coding from './assets/coding.gif';
 import './App.css'
 
 const App: React.FC = () => {
@@ -63,13 +64,13 @@ const App: React.FC = () => {
   return (
     
     <ChakraProvider theme={theme}>
-        <Image
-        src={cloudsbg}
-        alt='bg'
-        z-index={-1}
-        pos={'absolute'}
-        width={"100%"}
-         />
+        <img src={coding} alt='bg' className='bgimg'></img>
+        {/* // src={cloudsbg}
+        // alt='bg'
+        // z-index={-1}
+        // pos={'absolute'}
+        // width={"100%"}
+        //  /> */}
       <Box p={5} h="100%" >
       <VStack>
       <Box ref={navbarRef} as="nav" bg={colorMode === "dark" ? "gray.200" : "gray.900"} p={4} mb={8} borderRadius={20} borderWidth="2px" pos={'fixed'} opacity={opacity} transition="opacity 0.2s ease-in-out" >
@@ -127,7 +128,7 @@ const App: React.FC = () => {
             // Same substring at the start will only be typed once, initially
             'I am a Software Developer',
             1000,
-            'I am a tech enthusiast',
+            'I am a Tech Enthusiast',
             1000,
           ]}
           speed={50}

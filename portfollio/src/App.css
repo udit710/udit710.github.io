@@ -8,6 +8,12 @@
   /* padding-top: 30px; */
 }
 
+.bgimg{
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+}
+
 /* #root {
   max-width: 1280px;
   margin: 0 auto;
