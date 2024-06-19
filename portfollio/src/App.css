@@ -1,7 +1,7 @@
 .about{
   padding: 60px;
-  background-color: rgb(229, 229, 229);
-  color: #1d1d1d;
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
   font-size: 25px;
   /* width: 50%; */
   /* float: left; */
@@ -13,6 +13,43 @@
   position: absolute;
   width: 100%;
 }
+
+link:hover{
+  background-color: #ffffff;
+}
+
+mark{
+  /* padding: 0.2em; */
+  /* border-radius: 0.2em; */
+  /* border: 0.5px solid #000; */
+  padding: 2px;
+  color: black;
+}
+
+.markred{
+  background-color: #f56868;
+}
+
+.markwhite{
+  background-color: #ffffff;
+}
+
+.markorange{
+  background-color: #f5a442;
+}
+
+.markyellow{
+  background-color: #f5d142;
+}
+
+.markblue{
+  background-color: #42bcf5;
+}
+
+.markgreen{
+  background-color: #42f563;
+}
+
 
 /* #root {
   max-width: 1280px;

@@ -29,6 +29,7 @@ import cloudsbg from "./assets/cloudsbg.jpg"
 import theme from './theme';
 import coding from './assets/coding.gif';
 import './App.css'
+import MatrixRain from './MatrixRain';
 
 const App: React.FC = () => {
 
@@ -59,12 +60,13 @@ const App: React.FC = () => {
 
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+  
 
   
   return (
-    
     <ChakraProvider theme={theme}>
-        <img src={coding} alt='bg' className='bgimg'></img>
+      <MatrixRain />
+        {/* <img src={coding} alt='bg' className='bgimg'></img> */}
         {/* // src={cloudsbg}
         // alt='bg'
         // z-index={-1}
@@ -106,7 +108,7 @@ const App: React.FC = () => {
           </Box>
         </Center>
         <Center>
-          <Heading as="h1" size="2xl" fontFamily="sans-serif">Hi, I am Udit</Heading>
+          <Heading as="h1" size="2xl" fontFamily="sans-serif"><text>Hi, I am Udit</text></Heading>
         </Center>
         <Center mt={3}>
           <Link href="https://github.com/udit710" isExternal>
@@ -117,7 +119,7 @@ const App: React.FC = () => {
             <FaEnvelope size="30px" />
           </Link>
           <Box mx={2} />
-          <Link href="#">
+          <Link href="https://www.google.com/maps/place/Melbourne+VIC/@-37.9696431,144.3937442,9z/data=!3m1!4b1!4m6!3m5!1s0x6ad646b5d2ba4df7:0x4045675218ccd90!8m2!3d-37.8136276!4d144.9630576!16zL20vMGNoZ3pt?entry=ttu" isExternal>
             <FaMapMarkerAlt size="30px" />
           </Link>
         </Center>
@@ -127,6 +129,8 @@ const App: React.FC = () => {
           sequence={[
             // Same substring at the start will only be typed once, initially
             'I am a Software Developer',
+            1000,
+            'I am a Machine Learning Enthusiast',
             1000,
             'I am a Tech Enthusiast',
             1000,
@@ -150,9 +154,32 @@ const App: React.FC = () => {
         </Box> */}
         <Box id="about">
         <div className="about">
-        <Box border={'2px'} p={5} borderRadius={20} m={15}>
-          <Text>
-            A versatile and proactive software enthusiast, excelling in dynamic team environments. My keen ability to adapt to evolving challenges and my ever-growing hunger for learning set me apart. I thrive on social interactions like attending code nights and meet-ups, bringing not only strong technical skills but also a collaborative and engaging presence to any project. With my deep understanding of web and app development, I am poised to make a significant and unique contribution to the Vield of software development.
+        <Box border={'1px'} p={5} borderRadius={20} m={15} marginInline={60}>
+          <Text fontFamily={'monospace'}>
+            1.  <mark className='markred'>A versatile and</mark> <mark className='markorange'>  proactive software enthusiast,</mark> 
+            <br /> 
+            2.  &nbsp;&nbsp;&nbsp;&nbsp;<mark className='markgreen'>excelling in dynamic team environments.</mark> 
+            <br /> 
+            3.  &nbsp;&nbsp;&nbsp;&nbsp;<mark className='markred'>My keen ability to</mark> <mark className='markblue'>adapt to evolving challenges</mark> 
+            <br />
+            4.  <mark className='markwhite'>and my</mark> 
+            <br />
+            5.  &nbsp;&nbsp;&nbsp;&nbsp;<mark>ever-growing hunger</mark> <mark className='markblue'> for learning</mark>
+            <br />
+            6.  <mark className='markred'> set me apart.</mark>  <mark className='markgreen'>I thrive on social interactions</mark> 
+            <br />
+            7.  <mark className='markorange'>like attending code nights and meet-ups,</mark> <mark className='markred'>bringing not only strong technical </mark>
+            <br />
+            8.  &nbsp;&nbsp;&nbsp;&nbsp;<mark className='markblue'>skills but also a collaborative</mark> <mark className='markgreen'>and engaging presence </mark>
+            <br />
+            9.  &nbsp;&nbsp;&nbsp;&nbsp;<mark>to any project.</mark> <mark className='markwhite'> With my deep understanding </mark>
+            <br />
+            10. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<mark className='markgreen'>of web and app development,</mark> <mark className='markred'> I am poised to make a significant </mark>
+            <br />
+            11. <mark className='markblue'>and unique contribution</mark> <mark> to the field of</mark>
+            <br />
+            12.  <mark className='markorange'>software development.</mark>
+
           </Text>
           </Box>
         </div>
