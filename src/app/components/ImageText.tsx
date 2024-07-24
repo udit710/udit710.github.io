@@ -9,7 +9,7 @@ const ImageText = ({ imageSrc,IconEl, text }: { imageSrc: string , IconEl: React
     <div className="flex items-center">
       
       {
-        IconEl==='symbol' && <Image src={imageSrc} alt="Icon" className="h-5 w-5 md:h-8 md:w-8 mr-2" />
+        IconEl==='symbol' && <Image src={imageSrc} alt="Icon" width={5} height={5} className="h-5 w-5 md:h-8 md:w-8 mr-2" />
       }
       <h1 className="my-0 py-0">{text}</h1>
       {

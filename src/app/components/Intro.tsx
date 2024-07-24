@@ -12,16 +12,17 @@ function Intro() {
 <p className="text-[15px] md:text-lg text-black text-justify tracking-tight">A <b>versatile</b> and <b>proactive</b> software developer, excelling in dynamic team environments. My keen ability to <b>adapt</b> to evolving challenges and my ever-growing hunger for learning set me apart. I thrive on <b>social interactions</b> like attending code nights and meet-ups, bringing not only strong technical skills but also a collaborative and engaging presence to any project. With my <b>deep understanding</b> of web and app development, I am poised to make a significant and unique contribution to the field of software development</p>
 </text>
 <br />
-<button className="p-3 bg-blue text-white rounded-md font-mono">
-<a
-      href="/files/resume.pdf" 
+{/* <button className="p-3 bg-blue text-white rounded-md font-mono">
+      
+<object data="/files/resume.pdf" type="application/pdf" width="100%" height="100%">
+       {/* href="/files/resume.pdf" 
       target="_blank"    
       rel="noopener noreferrer" 
       className="text-white bg-blue-500 hover:bg-blue-600 px-2  rounded-md"
-    >
+    > 
       <ImageText text="My Resume" IconEl={MdSimCardDownload} imageSrc={""} />
-    </a>
-</button>
+    </object> 
+</button> */}
 </div>
     );
 }
