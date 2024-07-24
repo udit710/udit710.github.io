@@ -11,7 +11,7 @@ function Education() {
                     <a className="text-md md:text-xl tracking-tight md:tracking-normal" href="http://rmit.edu.au" target="_blank">
                 <ImageText imageSrc={rmit.src} text="Royal Melbourne Institute of Technology (RMIT)" IconEl={"symbol"} />
                 </a>
-                        <span className="font-sans text-sm opacity-50">Feb '22 - Nov '24</span>
+                        <span className="font-sans text-sm opacity-50">Feb &apos;22 - Nov &apos;24</span>
                     <h2 className="text-sm md:text-lg text-left font-mono">Bachelor of Computer Science 
                     </h2>
                 </div>

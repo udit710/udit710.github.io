@@ -35,7 +35,7 @@ function Projects() {
                     </button>
                     {/* Large screen */}
                 <div className="md:w-2/3 text-white font-mono hidden md:block">
-                <p className="text-gray-600 mb-2">Aug - Oct '23</p>
+                <p className="text-gray-600 mb-2">Aug - Oct &apos;23</p>
                     <ul className=" flex flex-wrap text-gray-800 text-sm list-disc list-inside mb-2">
                     <Tech text={"spring boot"} bg={"blue"} />
                     <Tech text={"react js"} bg={"blue"} />
@@ -94,7 +94,7 @@ function Projects() {
                     </button>
                     {/* Large screen */}
                 <div className="md:w-2/3 text-white font-mono hidden md:block">
-                <p className="text-gray-600 mb-2">Jul - Sep '23</p>
+                <p className="text-gray-600 mb-2">Jul - Sep &apos;23</p>
                     <ul className=" flex flex-wrap text-gray-800 text-sm list-disc list-inside mb-2">
 
                     <Tech text={"swift"} bg={"blue"} />

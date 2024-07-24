@@ -47,7 +47,7 @@ function Volunteering() {
             <ImageText imageSrc={gdsc.src} text="GDSC RMIT" IconEl={'symbol'} />
             </a>
         </div>
-        <p className="text-sm text-gray-600 pl-8 mb-8">Dec '23 - Present</p>
+        <p className="text-sm text-gray-600 pl-8 mb-8">Dec &apos;23 - Present</p>
 
         <div className=" flex items-center">
           <div className="relative flex items-center">
@@ -58,7 +58,7 @@ function Volunteering() {
             <ImageText imageSrc={risc.src} text="RISC RMIT" IconEl={'symbol'} />
             </a>
         </div>
-        <p className="text-sm text-gray-600 pl-8 mb-8">Nov '23 - Present</p>
+        <p className="text-sm text-gray-600 pl-8 mb-8">Nov &apos;23 - Present</p>
       </div>
     </div>
   );
