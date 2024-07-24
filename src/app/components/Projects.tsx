@@ -4,8 +4,8 @@ import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 import { GiShoppingCart } from "react-icons/gi";
 import Tech from "./tech";
 import ImageText from "./ImageText";
-import cart from "../public/cart.jpeg";
-import pumpbuddy from "../public/pumpbuddy.jpeg";
+import cart from "../../../public/cart.jpeg";
+import pumpbuddy from "../../../public/pumpbuddy.jpeg";
 import {FaGithub} from "react-icons/fa";
 
 function Projects() {

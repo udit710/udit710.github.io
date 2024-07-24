@@ -3,7 +3,7 @@ import React, {useState} from "react";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 import Tech from "./tech";
 import ImageText from "./ImageText";
-import codequest from "../public/codequest.jpeg";
+import codequest from "../../../public/codequest.jpeg";
 
 function Achievements() {
     const [isExpanded, setIsExpanded] = useState(false);

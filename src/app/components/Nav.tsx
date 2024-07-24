@@ -6,7 +6,7 @@ import { CiMenuBurger } from 'react-icons/ci';
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { Bars3Icon, SunIcon, MoonIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import useScroll from '../hooks/useScroll';
-import logo from '../logo.png';
+import logo from '../../../public/logo.png';
 
 
 const navigation = [

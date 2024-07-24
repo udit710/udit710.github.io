@@ -3,8 +3,8 @@
 import next from "next";
 import { TypeAnimation } from 'react-type-animation';
 import Image from 'next/image'
-import udit from "../udit.jpeg";
-import aura from "../aura.png";
+import udit from "../../../public/udit.jpeg";
+import aura from "../../../public/aura.png";
 
 function About() {
   return (

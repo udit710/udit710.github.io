@@ -1,6 +1,6 @@
 import next from "next";
 import ImageText from "./ImageText";
-import rmit from "../public/rmit.jpeg";
+import rmit from "../../../public/rmit.jpeg";
 
 function Education() {
     return (
