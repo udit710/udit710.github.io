@@ -11,7 +11,7 @@ import logo from '../../../public/logo.png';
 
 const navigation = [
     { name: 'Experience', href: '#experience', current: false },
-    { name: 'Skills', href: '#skills', current: false },
+    { name: 'Stack', href: '#skills', current: false },
     { name: 'Projects', href: '#projects', current: false },
     { name: 'Achievements', href: '#achievements', current: false },
     { name: 'Contact', href: '#contact', current: false },

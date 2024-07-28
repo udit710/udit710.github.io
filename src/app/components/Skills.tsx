@@ -6,7 +6,7 @@ import Tech from "./tech";
 function Skills() {
     return (
         <div className="md:p-6 p-0">
-                <h1 className="font-[Times] text-3xl mb-5">Skills</h1>
+                <h1 className="font-[Times] text-3xl mb-5">Stack</h1>
             <div className="md:flex md:flex-wrap">
                 <div className="box-content m-auto bg-white m4 px-8 py-2 text-blue mb-5 border-[0.5px] border-black shadow-lg hover:bg-black hover:text-white">
                     <h1 className="text-3xl text-center font-[Times]">Web</h1>

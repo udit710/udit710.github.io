@@ -4,7 +4,7 @@ const Sidebar = ({ activeSection }: { activeSection: string }) => {
   const navigation = [
     { name: 'About', href: '#about', current: activeSection === 'about' },
     { name: 'Experience', href: '#experience', current: activeSection === 'experience' },
-    { name: 'Skills', href: '#skills', current: activeSection === 'skills' },
+    { name: 'Stack', href: '#skills', current: activeSection === 'skills' },
     { name: 'Projects', href: '#projects', current: activeSection === 'projects' },
     { name: 'Achievements', href: '#achievements', current: activeSection === 'achievements' },
     { name: 'Education', href: '#education', current: activeSection === 'education' },
