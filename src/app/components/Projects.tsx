@@ -6,6 +6,7 @@ import Tech from "./tech";
 import ImageText from "./ImageText";
 import cart from "../../../public/cart.jpeg";
 import pumpbuddy from "../../../public/pumpbuddy.jpeg";
+import aws from "../../../public/aws.jpeg";
 import {FaGithub} from "react-icons/fa";
 
 function Projects() {
@@ -20,10 +21,69 @@ function Projects() {
   const toggleReadMore2 = () => {
     setIsExpanded2(!isExpanded2);
   };
+    const [isExpanded3, setIsExpanded3] = useState(false);
+
+  const toggleReadMore3 = () => {
+    setIsExpanded3(!isExpanded3);
+  };
 
     return (
         <div className="md:p-6 p-0">
                 <h1 className="font-[Times] text-3xl mb-5">Projects</h1>
+
+                {/* Serverless */}
+                <div className="flex flex-col md:flex-row border-[0.5px] border-black overflow-hidden hover:shadow-xl font-[Times] mb-5">
+                <div className="md:w-1/3 bg-blue bg-opacity-10 pt-4 px-6 flex justify-between items-center md:block">
+                <a href="https://aws.amazon.com/pm/lambda/" target="_blank" className="text-3xl font-bold mb-3">
+                <ImageText text="Serverless Web App" imageSrc={aws.src} IconEl={"symbol"} />
+                    </a>
+                    <button onClick={toggleReadMore3} className="text-blue-500 underline bg-blue bg-opacity-20 p-1 md:hidden mb-3">
+                        {isExpanded3 ? <FaAngleUp /> : <FaAngleDown />}
+                    </button>
+                    {/* Large screen */}
+                <div className="md:w-2/3 text-white font-mono hidden md:block">
+                <p className="text-gray-600 mb-2">Mar - Apr &apos;24</p>
+                    <ul className=" flex flex-wrap text-gray-800 text-sm list-disc list-inside mb-2">
+                        {/* React, AWS EC2, DynamoDB, AWS Lambda, AWS S3, Apache2, TailwindCSS */}
+                    <Tech text={"react js"} bg={"blue"} />
+                    <Tech text={"dynamo db"} bg={"blue"} />
+                    <Tech text={"aws ec2"} bg={"blue"} />
+                    <Tech text={"aws lambda"} bg={"blue"} />
+                    <Tech text={"aws api gateway"} bg={"blue"} />
+                    <Tech text={"s3"} bg={"blue"} />
+                    <Tech text={"nginx"} bg={"blue"} />
+                    <Tech text={"tailwind"} bg={"blue"} />
+                    </ul>
+                </div>
+                </div>
+                {/* Small Screen */}
+                <div className="md:w-2/3 bg-blue text-white p-6 font-mono md:hidden">
+                {isExpanded3 ? (
+                    <p className="text-sm md:text-lg">Developed a serverless online music subscription application using AWS Lambda. Leveraged more AWS services, including S3 for storage and DynamoDB for database management. Deployed the application on an Ubuntu Server using EC2. Designed and implemented key components and functionalities, enhancing user experience and ensuring scalability.
+                    <br />
+                    <text className="flex flex-wrap">
+                        <Tech text={"react js"} bg={"white"} />
+                        <Tech text={"dynamo db"} bg={"white"} />
+                        <Tech text={"aws ec2"} bg={"white"} />
+                        <Tech text={"aws lambda"} bg={"white"} />
+                        <Tech text={"aws api gateway"} bg={"white"} />
+                        <Tech text={"s3"} bg={"white"} />
+                        <Tech text={"nginx"} bg={"white"} />
+                        <Tech text={"tailwind"} bg={"white"} />
+                    </text>
+
+                    </p>
+                    ) : (
+                        <p className="text-sm md:text-lg">Developed a serverless online music subscription application using AWS Lambda. Leveraged more AWS...</p>
+                    )}
+                </div>
+                {/* Large Screen */}
+                <div className="md:w-2/3 bg-blue text-white p-6 font-mono hidden md:block">
+                    <p className="text-sm md:text-lg">Developed a serverless online music subscription application using AWS Lambda. Leveraged more AWS services, including S3 for storage and DynamoDB for database management. Deployed the application on an Ubuntu Server using EC2. Designed and implemented key components and functionalities, enhancing user experience and ensuring scalability.</p>
+                </div>
+                </div>
+
+
                 {/* Superprice */}
                 <div className="flex flex-col md:flex-row border-[0.5px] border-black overflow-hidden hover:shadow-xl font-[Times] mb-5">
                 <div className="md:w-1/3 bg-blue bg-opacity-10 pt-4 px-6 flex justify-between items-center md:block">
@@ -83,6 +143,7 @@ function Projects() {
                 </div>
                 </div>
 
+                
                 {/* PumpBuddy */}
                 <div className="flex flex-col md:flex-row border-[0.5px] border-black overflow-hidden hover:shadow-xl font-[Times] mb-5">
                 <div className="md:w-1/3 bg-blue bg-opacity-10 pt-4 px-6 flex justify-between items-center md:block">
@@ -90,7 +151,7 @@ function Projects() {
                     <ImageText text="PumpBuddy" imageSrc={pumpbuddy.src} IconEl={"symbol"} />
                     </a>
                     <button onClick={toggleReadMore2} className="text-blue-500 underline bg-blue bg-opacity-20 p-1 md:hidden mb-3">
-                        {isExpanded2 ? <FaAngleUp /> : <FaAngleDown />}
+                        {isExpanded3 ? <FaAngleUp /> : <FaAngleDown />}
                     </button>
                     {/* Large screen */}
                 <div className="md:w-2/3 text-white font-mono hidden md:block">
