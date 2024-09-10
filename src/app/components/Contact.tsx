@@ -14,11 +14,11 @@ const Contact = () => {
                     <div className="font-mono text-left text-lg px-4 py-2 border-[0.5px] border-black">
                     <a className="flex items-center space-x-2" href="tel:+61484525498"target="_blank">
                         <FaPhoneAlt className="h-5 w-5" /> 
-                        <h1 className="font-[Times] text-md underline">+61484525498</h1>
+                        <h1 className="font-[Times] text-md underline">0484525498</h1>
                     </a>
                     <a
                     className="flex items-center space-x-2"
-                    href="mailto:udit.malshe.10@outlook.com"
+                    href="mailto:uditmalshe@outlook.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     >
