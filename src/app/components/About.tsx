@@ -12,7 +12,7 @@ function About() {
     <div className="h-[100vh] w-[100vw] flex justify-center items-center text-white">
         <Image
             src={aura}
-            className=" absolute z-[-1] w-[100vw] h-[100vh]"
+            className=" absolute z-[-1] w-[100%] h-[100vh]"
             alt="Bg Image"
         />
     <div>
