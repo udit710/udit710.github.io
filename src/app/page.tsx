@@ -14,6 +14,8 @@ import Achievements from './components/Achievements';
 import Volunteering from './components/Volunteering';
 import Education from './components/Education';
 import Contact from './components/Contact';
+import aura from '../../public/aura2.png';
+import Image from 'next/image';
 
 const Home: NextPage = () => {
   const [activeSection, setActiveSection] = useState('');
@@ -50,10 +52,15 @@ const Home: NextPage = () => {
 
   return (
     <>
+        <Image
+          src={aura}
+          className=" fixed z-[-1] w-[100%] h-[100vh]"
+          alt="Bg Image"
+      />
       <Nav />
       <About />
       <div className='flex max-h-[100vh] '>
-        <Sidebar activeSection={activeSection} />
+        {/* <Sidebar activeSection={activeSection} /> */}
         <main className="flex-1 p-10 lg:overflow-y-auto scroll-smooth">
           <section id='about'>
             <Intro />

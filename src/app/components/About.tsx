@@ -10,21 +10,21 @@ function About() {
   return (
     <>
     <div className="h-[100vh] w-[100%] flex justify-center items-center text-white">
-        <Image
+        {/* <Image
             src={aura}
             className=" absolute z-[-1] w-[100%] h-[100vh]"
             alt="Bg Image"
-        />
+        /> */}
     <div>
-    <div className="flex justify-center items-center">
+    <div className="flex justify-center items-center ">
     <Image
       src={udit}
-      className="md:w-[10vw] w-[30vw] md:h-[10vw] h-[30vw]  rounded-full bg-blue-500 p-1 self-center"
+      className="md:w-[20vw] w-[30vw] md:h-[20vw] h-[30vw] rounded-full bg-white p-1 self-center"
       alt="Udit"
     />
     </div>
     <div className="mt-4 flex justify-center items-center">
-        <h1 className="font-[Times] text-3xl">Hi, I am Udit</h1>
+        <h1 className="font-[Times] text-5xl">Hi, I am Udit</h1>
     </div>
     <div className="flex justify-center items-center">
         <TypeAnimation
@@ -36,7 +36,7 @@ function About() {
             1000,
           ]}
           speed={50}
-          className="text-2xl w-[50vw] text-center align-center"
+          className="text-3xl w-[50vw] text-center align-center"
           repeat={Infinity}
         />
     </div>

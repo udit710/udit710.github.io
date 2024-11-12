@@ -1,12 +1,13 @@
 import next from "next";
 import Tech  from "./tech";
+import aws from "../../../public/aws.jpeg";
 
 function Experience() {
     
     return (
         <div className=" md:p-6 p-0">
             <div>
-                <h1 className="font-[Times] text-3xl mb-5">Experience</h1>
+                <h1 className="font-[Times] text-3xl mb-5 text-white">Experience</h1>
                 <div className="box-content m-auto bg-blue bg-opacity-10 m4 text-black mb-5 border-[0.5px] border-black hover:shadow-xl ">
                     <div className="bg-blue bg-opacity-80 text-white px-4 py-2">
                     <h1 className="text-3xl text-left font-[Times]">Full-Stack Developer / <span className="text-2xl">Freelance</span></h1>
@@ -17,7 +18,7 @@ function Experience() {
                     <li>Implemented Agile methodologies, including Scrum, to enhance collaboration, streamline project management, and deliver high-quality solutions on time.</li>
                     <li>Engaged with clients to understand requirements, provide Technical recommendations, and deliver customised solutions that meet their business needs.</li>
                     <br />
-                    <div className=" text-center text-sm font-mono"><Tech bg="blue" text="aws" /> <Tech bg="blue" text="react" /> <Tech bg="blue" text="django" /> </div>
+                    <div className=" text-center text-sm font-mono"><Tech bg="blue" text="aws" image={aws}/> <Tech bg="blue" text="react" /> <Tech bg="blue" text="django" /> </div>
                     </div>
                 </div>
                 <div className="box-content m-auto bg-blue bg-opacity-10 m4 text-black mb-5 border-[0.5px] border-black hover:shadow-xl ">
