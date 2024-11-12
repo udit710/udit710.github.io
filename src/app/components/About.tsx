@@ -9,7 +9,7 @@ import aura from "../../../public/aura.png";
 function About() {
   return (
     <>
-    <div className="h-[100vh] w-[100%] flex justify-center items-center text-white">
+    <div className="h-[100vh] w-[100%] flex justify-center items-center text-white ">
         <Image
             src={aura}
             className=" absolute z-[-1] w-[100%] h-[100vh]"
@@ -19,7 +19,7 @@ function About() {
     <div className="flex justify-center items-center">
     <Image
       src={udit}
-      className="md:w-[10vw] w-[30vw] md:h-[10vw] h-[30vw]  rounded-full bg-blue-500 p-1 self-center"
+      className="md:w-[20vw] w-[50vw] md:h-[20vw] h-[50vw]  rounded-full border-2 bg-white-800 p-1 self-center"
       alt="Udit"
     />
     </div>
