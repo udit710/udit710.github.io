@@ -15,7 +15,7 @@ function Projects() {
                 description="Created a lightweight automation tool to keep track of jobs I have applied to. Used web scraping to get job data, summaries the data using GenAI and updates it on spreadsheets."
                 shortDescription="Created a lightweight automation tool to keep track of jobs I have applied to..."
                 skills={["Flask", "React", "DynamoDB", "AWS EC2", "Web Scraping", "GenAI integration", "Google APIs", "Git", "Pandas"]}
-                date="Sep '23"
+                date="Nov '24"
                 link=""
                 githubUrl="" imageSrc={""}            
             />
@@ -25,8 +25,19 @@ function Projects() {
                 description="Led a team of 6 to improve and develop a course alignment tool. Followed agile methodology to conduct scrums and conduct code reviews. Coordinated with team members and client to deliver a well structured product. Ensured CI/CD and constant reliability of linux servers."
                 shortDescription="Led a team of 6 to improve and develop a course alignment tool..."
                 skills={["Leadership", "Communication", "Management", "CI/CD", "Git", "Linux", "Python", "Pandas", "Networking"]}
-                date="Sep '23"
+                date="Oct '24"
                 imageSrc={""}
+                link=""
+                githubUrl=""
+            />
+
+            <ProjectCard 
+                projectName="Sentiment Detection in Text and Images"
+                description="Used two models and combined the multi-modal features to label the persuasion techniques used in memes. Achieved binary accuracy of over 80% and an F1-Score of about 0.55."
+                shortDescription="Used two models and combined the multi-modal features to label persuasion techniques in memes..."
+                skills={["Transfer Learning", "LSTM", "RNNs", "Tensorflow", "Pytorch", "Image Recognition", "Attention Mechanisms"]}
+                date="Oct '24"
+                imageSrc={pumpbuddy.src}
                 link=""
                 githubUrl=""
             />
@@ -36,21 +47,10 @@ function Projects() {
                 description="Developed a single pre-trained Image recognition model and fine-tuned it to perform multiple classification tasks.  Firstly, classify images into 40 categories of actions performed by humans, and to detect more than one entity. Achieved about 75% and 85% accuracy on both tasks respectively."
                 shortDescription="Developed a single pre-trained image recognition model and fine-tuned it for multiple classification tasks..."
                 skills={["Neural Networks", "Tensorflow", "Keras", "Python", "Data Analysis", "Image Recognition"]}
-                date="Aug '23"
+                date="Sep '24"
                 imageSrc={cart.src}
                 link=""
                 githubUrl="https://github.com/udit710/Image-Recognition"
-            />
-
-            <ProjectCard 
-                projectName="Sentiment Detection in Text and Images"
-                description="Used two models and combined the multi-modal features to label the persuasion techniques used in memes. Achieved binary accuracy of over 80% and an F1-Score of about 0.55."
-                shortDescription="Used two models and combined the multi-modal features to label persuasion techniques in memes..."
-                skills={["Transfer Learning", "LSTM", "RNNs", "Tensorflow", "Pytorch", "Image Recognition", "Attention Mechanisms"]}
-                date="Jul '23"
-                imageSrc={pumpbuddy.src}
-                link=""
-                githubUrl=""
             />
 
             <ProjectCard 
