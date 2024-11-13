@@ -1,5 +1,5 @@
 import { MdSimCardDownload } from "react-icons/md";
-import ImageText from "./ImageText";
+import ImageText from "../componentCards/ImageText";
 
 function Intro() {
     return (

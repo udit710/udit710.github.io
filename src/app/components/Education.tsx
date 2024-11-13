@@ -1,5 +1,5 @@
 import next from "next";
-import ImageText from "./ImageText";
+import ImageText from "../componentCards/ImageText";
 import rmit from "../../../public/rmit.jpeg";
 
 function Education() {

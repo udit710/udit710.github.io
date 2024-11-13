@@ -1,5 +1,5 @@
 import next from "next";
-import Tech  from "./tech";
+import Tech  from "../componentCards/tech";
 
 function Experience() {
     
@@ -17,7 +17,7 @@ function Experience() {
                     <li>Implemented Agile methodologies, including Scrum, to enhance collaboration, streamline project management, and deliver high-quality solutions on time.</li>
                     <li>Engaged with clients to understand requirements, provide Technical recommendations, and deliver customised solutions that meet their business needs.</li>
                     <br />
-                    <div className=" text-center text-sm font-mono"><Tech bg="blue" text="aws" /> <Tech bg="blue" text="react" /> <Tech bg="blue" text="django" /> </div>
+                    <div className=" text-center text-sm font-mono"><Tech bg="blue" text="AWS" /> <Tech bg="blue" text="React JS" /> <Tech bg="blue" text="Django" /> </div>
                     </div>
                 </div>
                 <div className="box-content m-auto bg-blue bg-opacity-10 m4 text-black mb-5 border-[0.5px] border-black hover:shadow-xl ">
@@ -30,7 +30,7 @@ function Experience() {
                     <li>Collaborate with team members using version control systems such as Git to manage code changes efViciently.</li>
                     <li>Employed frameworks to ensure the website&apos;s functionality, responsiveness, and security. Participate in regular meetings to discuss project progress, brainstorm ideas, and address any challenges that arise during development.</li>
                     <br />
-                    <div className=" text-center text-sm font-mono"><Tech bg="blue" text="node js" /> <Tech bg="blue" text="react" /> <Tech bg="blue" text="bootstrap" /> </div>
+                    <div className=" text-center text-sm font-mono"><Tech bg="blue" text="Node JS" /> <Tech bg="blue" text="React JS" /> <Tech bg="blue" text="Bootstrap" /> </div>
                     </div>
                 </div>
             </div>

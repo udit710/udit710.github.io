@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { MdOutlineHorizontalRule } from 'react-icons/md';
-import ImageText from './ImageText';
+import ImageText from '../componentCards/ImageText';
 import gdsc from "../../../public/gdsc.jpeg";
 import risc from "../../../public/risc.jpeg";
 

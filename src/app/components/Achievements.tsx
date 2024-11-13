@@ -1,8 +1,8 @@
 import next from "next";
 import React, {useState} from "react";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa";
-import Tech from "./tech";
-import ImageText from "./ImageText";
+import Tech from "../componentCards/tech";
+import ImageText from "../componentCards/ImageText";
 import codequest from "../../../public/codequest.jpeg";
 
 function Achievements() {
@@ -30,7 +30,7 @@ function Achievements() {
                         <text>
                             Secured the 2nd position in CodeQuest 2023, a prestigious coding competition that involved a game of competing on various maps. During the competition, I leveraged my expertise in Python programming. To enhance the bot’s capabilities, we used the CQ23 library, which facilitated smooth communication between my code and the game server through JSON messages. This achievement not only demonstrates my proficiency in software development but also showcases my strategic thinking and problem-solving abilities in a competitive environment.
                             <div className=" text-center text-sm ]">
-                                <Tech bg="blue" text="python" /> <Tech bg="blue" text="docker" />
+                                <Tech bg="blue" text="Python" /> <Tech bg="blue" text="Docker" />
                                 {/* Tech Stack: Python, CQ23, Docker.</span> */}
                                 </div>
                         </text>
@@ -44,7 +44,7 @@ function Achievements() {
                         <text>
                             Secured the 2nd position in CodeQuest 2023, a prestigious coding competition that involved a game of competing on various maps. During the competition, I leveraged my expertise in Python programming. To enhance the bot’s capabilities, we used the CQ23 library, which facilitated smooth communication between my code and the game server through JSON messages. This achievement not only demonstrates my proficiency in software development but also showcases my strategic thinking and problem-solving abilities in a competitive environment.
                             <div className=" text-center text-sm ]">
-                                <Tech bg="blue" text="python" /> <Tech bg="blue" text="docker" />
+                                <Tech bg="blue" text="Python" /> <Tech bg="blue" text="Docker" />
                                 {/* Tech Stack: Python, CQ23, Docker.</span> */}
                                 </div>
                         </text>
