@@ -4,13 +4,13 @@ import SkillCategory from "../componentCards/SkillCategory";
 function Skills() {
     const categories = [
         {
-            title: "Technologies",
-            skills: ["Node JS", "React JS", "Tailwind", "Flask", "Django", "Express", "Next", "Spring boot"],
+            title: "Programming",
+            skills: ["Object Oriented", "Functional", "Scripting", "REST API"],
             bgColor: "bg-white text-blue"
         },
         {
-            title: "Programming",
-            skills: ["Object Oriented", "Functional", "Scripting", "REST API"],
+            title: "CI/CD",
+            skills: ["Git", "Docker", "Github Actions", "Linux"],
             bgColor: "bg-blue bg-opacity-60 text-white"
         },
         {
@@ -19,18 +19,18 @@ function Skills() {
             bgColor: "bg-white text-blue"
         },
         {
-            title: "App",
-            skills: ["SwiftUI", "React Native", "Flutter", ".NET", "SQL"],
+            title: "Technologies",
+            skills: ["Node JS", "React JS", "Tailwind", "Flask", "Django", "Express", "Next", "Spring boot"],
             bgColor: "bg-blue bg-opacity-60 text-white"
-        },
-        {
-            title: "CI/CD",
-            skills: ["Git", "Docker", "Github Actions", "Linux"],
-            bgColor: "bg-white text-blue"
         },
         {
             title: "ML",
             skills: ["Tensorflow", "Pytorch", "NLP", "Pre-trained models", "CV"],
+            bgColor: "bg-white text-blue"
+        },
+        {
+            title: "App",
+            skills: ["SwiftUI", "React Native", "Flutter", ".NET", "SQL"],
             bgColor: "bg-blue bg-opacity-60 text-white"
         },
         {
