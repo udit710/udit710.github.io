@@ -13,7 +13,7 @@ const Sidebar = ({ activeSection }: { activeSection: string }) => {
   ];
 
   return (
-    <div className="h-screen bg-gray-900 text-white w-[30%] hidden lg:block">
+    <div className="h-screen bg-gray-900 text-white w-[20%] hidden lg:block">
       <nav className="mt-10">
         {navigation.map((item) => (
           <Link key={item.name} href={item.href}>
