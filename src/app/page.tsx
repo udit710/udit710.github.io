@@ -54,7 +54,8 @@ const Home: NextPage = () => {
       <About />
       <div className='flex max-h-[100vh] '>
         <Sidebar activeSection={activeSection} />
-        <main className="flex-1 p-10 lg:overflow-y-auto scroll-smooth overflow-x-hidden">
+        {/* <main className="flex-1 p-10 lg:overflow-y-auto scroll-smooth "> */}
+        <main className="flex-1 p-10 w-[100%] lg:overflow-y-auto scroll-smooth">
           <section id='about'>
             <Intro />
           </section>
