@@ -14,10 +14,10 @@ function Projects() {
                 projectName="Auto Job Application Tracker"
                 description="Created a lightweight automation tool to keep track of jobs I have applied to. Used web scraping to get job data, summaries the data using GenAI and updates it on spreadsheets."
                 shortDescription="Created a lightweight automation tool to keep track of jobs I have applied to..."
-                skills={["Flask", "React", "DynamoDB", "AWS EC2", "Web Scraping", "GenAI integration", "Google APIs", "Git", "Pandas"]}
+                skills={["Flask", "React JS", "Dynamo db", "Ec2", "Web Scraping", "GenAI integration", "Google APIs", "Git", "Pandas"]}
                 date="Nov '24"
                 link=""
-                githubUrl="" imageSrc={""}            
+                githubUrl="https://github.com/udit710/Auto-Job-Application-Tracker-Tool" imageSrc={""}            
             />
 
             <ProjectCard
