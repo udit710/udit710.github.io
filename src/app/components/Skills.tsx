@@ -20,7 +20,7 @@ function Skills() {
         },
         {
             title: "Technologies",
-            skills: ["Node JS", "React JS", "Tailwind", "Flask", "Django", "Express", "Next", "Spring boot"],
+            skills: ["Node JS", "React JS", "Tailwind", "Flask", "Django", "Express", "Next", "Spring boot", "ASP.NET Core"],
             bgColor: "bg-blue bg-opacity-60 text-white"
         },
         {

@@ -70,7 +70,7 @@ const iconMapping: { [key: string]: any } = {
     "RNNs": FaIcons.FaNetworkWired,
     "Attention Mechanisms": SiIcons.SiBasicattentiontoken,
     "Beanstalk": FaIcons.FaAws,
-
+    "ASP.NET Core": SiIcons.SiDotnet,
 };
 
 export default iconMapping;
