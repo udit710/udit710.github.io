@@ -4,6 +4,7 @@ import Tech from "./tech";
 import ImageText from "./ImageText";
 
 interface ProjectCardProps {
+    tag: string[];
     projectName: string;
     description: string;
     shortDescription: string;
@@ -15,6 +16,7 @@ interface ProjectCardProps {
 }
 
 const ProjectCard = ({ 
+    tag,
     projectName, 
     description, 
     shortDescription,

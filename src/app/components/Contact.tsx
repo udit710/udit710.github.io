@@ -12,10 +12,10 @@ const Contact = () => {
                         </h1>
                     </div>
                     <div className="font-mono text-left text-lg px-4 py-2 border-[0.5px] border-black">
-                    <a className="flex items-center space-x-2" href="tel:+61484525498"target="_blank">
+                    {/* <a className="flex items-center space-x-2" href="tel:+61484525498"target="_blank">
                         <FaPhoneAlt className="h-5 w-5" /> 
                         <h1 className="font-[Times] text-md underline">0484525498</h1>
-                    </a>
+                    </a> */}
                     <a
                     className="flex items-center space-x-2"
                     href="mailto:uditmalshe@outlook.com"
@@ -23,15 +23,15 @@ const Contact = () => {
                     rel="noopener noreferrer"
                     >
                     <CiMail className="h-5 w-5" /> 
-                    <h1 className="font-[Times] text-gray-900">Email</h1>
+                    <h1 className="font-[Times] text-gray-900 hover:underline">Email</h1>
                     </a>
                     <a className="flex items-center space-x-2" href="https://www.linkedin.com/in/udit-malshe/" target="_blank">
                         <FaLinkedin className="h-5 w-5" /> 
-                        <h1 className="font-[Times] ">LinkedIn</h1>
+                        <h1 className="font-[Times] hover:underline">LinkedIn</h1>
                     </a>
                     <a className="flex items-center space-x-2" href="https://github.com/udit710" target="_blank">
                         <FaGithub className="h-5 w-5" /> 
-                        <h1 className="font-[Times] ">GitHub</h1>
+                        <h1 className="font-[Times] hover:underline">GitHub</h1>
                     </a>
                     </div>
                 </div>

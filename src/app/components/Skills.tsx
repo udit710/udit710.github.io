@@ -5,7 +5,7 @@ function Skills() {
     const categories = [
         {
             title: "Programming",
-            skills: ["Object Oriented", "Functional", "Scripting", "REST API"],
+            skills: ["Object Oriented", "Functional", "Scripting", "REST API", "WebSockets"],
             bgColor: "bg-white text-blue"
         },
         {
@@ -20,17 +20,17 @@ function Skills() {
         },
         {
             title: "Technologies",
-            skills: ["Node JS", "React JS", "Tailwind", "Flask", "Django", "Express", "Next", "Spring boot", "ASP.NET Core"],
+            skills: ["Node JS", "React JS", "Flask", "Django", "Spring boot", ".NET", "SwiftUI"],
             bgColor: "bg-blue bg-opacity-60 text-white"
         },
         {
             title: "ML",
-            skills: ["Tensorflow", "Pytorch", "NLP", "Pre-trained models", "CV"],
+            skills: ["Tensorflow", "Pandas", "NLP", "Pre-trained models", "CV"],
             bgColor: "bg-white text-blue"
         },
         {
-            title: "App",
-            skills: ["SwiftUI", "React Native", "Flutter", ".NET", "SQL"],
+            title: "Databases",
+            skills: ["MySQL", "Dynamo db", "PostgreSQL", "NoSQL"],
             bgColor: "bg-blue bg-opacity-60 text-white"
         },
         {

@@ -71,6 +71,13 @@ const iconMapping: { [key: string]: any } = {
     "Attention Mechanisms": SiIcons.SiBasicattentiontoken,
     "Beanstalk": FaIcons.FaAws,
     "ASP.NET Core": SiIcons.SiDotnet,
+    "PostgreSQL": SiIcons.SiPostgresql,
+    "NoSQL": FaIcons.FaDatabase,
+    "MySQL": SiIcons.SiMysql,
+    "WebSockets": FaIcons.FaSitemap,
+    "AWS ECR": SiIcons.SiAmazonaws,
+    "CodePipeline": SiIcons.SiAmazonaws,
+    "Numpy": SiIcons.SiNumpy,
 };
 
 export default iconMapping;
