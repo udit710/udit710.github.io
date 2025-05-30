@@ -32,7 +32,11 @@ function About() {
             // Same substring at the start will only be typed once, initially
             'I\'m a Software Developer',
             1000,
+            'I like automating things',
+            1000,
             'I\'m a Tech Enthusiast',
+            1000,
+            'I enjoy solving problems',
             1000,
           ]}
           speed={50}
