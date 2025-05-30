@@ -9,8 +9,21 @@ function Experience() {
                 <h1 className="font-[Times] text-3xl mb-5">Experience</h1>
                 <div className="box-content m-auto bg-blue bg-opacity-10 m4 text-black mb-5 border-[0.5px] border-black hover:shadow-xl ">
                     <div className="bg-blue bg-opacity-80 text-white px-4 py-2">
+                    <h1 className="text-3xl text-left font-[Times]">Graduate DevOps Engineer / <span className="text-2xl">Iress</span></h1>
+                    <h2 className="font-[Times] text-xl">May &apos;25 - Present</h2>
+                    </div>
+                    <div className="font-mono text-left text-sm md:text-lg px-4 py-2">
+                    {/* <li>Designed and developed dynamic web applications using variant frameworks to create responsive and user-friendly interfaces and used AWS as cloud infrastructure.</li>
+                    <li>Implemented Agile methodologies, including Scrum, to enhance collaboration, streamline project management, and deliver high-quality solutions on time.</li>
+                    <li>Engaged with clients to understand requirements, provide Technical recommendations, and deliver customised solutions that meet their business needs.</li>
+                    <br /> */}
+                    <div className=" text-center text-sm font-mono"><Tech bg="blue" text="AWS" /> <Tech bg="blue" text="Python" /> <Tech bg="blue" text="Terraform" /> </div>
+                    </div>
+                </div>
+                <div className="box-content m-auto bg-blue bg-opacity-10 m4 text-black mb-5 border-[0.5px] border-black hover:shadow-xl ">
+                    <div className="bg-blue bg-opacity-80 text-white px-4 py-2">
                     <h1 className="text-3xl text-left font-[Times]">Full-Stack Developer / <span className="text-2xl">Freelance</span></h1>
-                    <h2 className="font-[Times] text-xl">Apr &apos;24 - Present</h2>
+                    <h2 className="font-[Times] text-xl">Apr &apos;24 - May &apos;25</h2>
                     </div>
                     <div className="font-mono text-left text-sm md:text-lg px-4 py-2">
                     <li>Designed and developed dynamic web applications using variant frameworks to create responsive and user-friendly interfaces and used AWS as cloud infrastructure.</li>
@@ -20,7 +33,7 @@ function Experience() {
                     <div className=" text-center text-sm font-mono"><Tech bg="blue" text="AWS" /> <Tech bg="blue" text="Agile" /> <Tech bg="blue" text="REST API" /> </div>
                     </div>
                 </div>
-                <div className="box-content m-auto bg-blue bg-opacity-10 m4 text-black mb-5 border-[0.5px] border-black hover:shadow-xl ">
+                {/* <div className="box-content m-auto bg-blue bg-opacity-10 m4 text-black mb-5 border-[0.5px] border-black hover:shadow-xl ">
                     <div className="bg-blue bg-opacity-80 text-white px-4 py-2">
                     <h1 className="text-3xl text-left font-[Times]">Web Developer / <span className="text-2xl">RISC RMIT</span></h1>
                     <h2 className="font-[Times] text-xl">Apr &apos;24 - Present</h2>
@@ -32,7 +45,7 @@ function Experience() {
                     <br />
                     <div className=" text-center text-sm font-mono"><Tech bg="blue" text="Node JS" /> <Tech bg="blue" text="React JS" /> <Tech bg="blue" text="Git" /> </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     );

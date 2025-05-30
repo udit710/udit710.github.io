@@ -78,6 +78,7 @@ const iconMapping: { [key: string]: any } = {
     "AWS ECR": SiIcons.SiAmazonaws,
     "CodePipeline": SiIcons.SiAmazonaws,
     "Numpy": SiIcons.SiNumpy,
+    "Terraform": SiIcons.SiTerraform,
 };
 
 export default iconMapping;
