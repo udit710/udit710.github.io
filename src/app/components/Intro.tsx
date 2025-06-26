@@ -12,7 +12,7 @@ function Intro() {
                 </p>
             </text>
             <br />
-            <button className="p-3 bg-blue text-white rounded-md font-mono">
+            <button className="p-3 bg-green-600 hover:bg-green-700 text-white rounded-md font-mono">
                 <a 
                     href="/resume.pdf" 
                     target="_blank"
