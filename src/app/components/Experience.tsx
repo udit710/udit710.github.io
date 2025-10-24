@@ -2,7 +2,7 @@ import next from "next";
 import Tech  from "../componentCards/tech";
 
 function Experience() {
-    
+
     return (
         <div className=" md:p-6 p-0">
             <div>
@@ -13,10 +13,6 @@ function Experience() {
                     <h2 className="font-[Times] text-xl">May &apos;25 - Present</h2>
                     </div>
                     <div className="font-mono text-left text-sm md:text-lg px-4 py-2">
-                    {/* <li>Designed and developed dynamic web applications using variant frameworks to create responsive and user-friendly interfaces and used AWS as cloud infrastructure.</li>
-                    <li>Implemented Agile methodologies, including Scrum, to enhance collaboration, streamline project management, and deliver high-quality solutions on time.</li>
-                    <li>Engaged with clients to understand requirements, provide Technical recommendations, and deliver customised solutions that meet their business needs.</li>
-                    <br /> */}
                     <div className=" text-center text-sm font-mono"><Tech bg="blue" text="AWS" /> <Tech bg="blue" text="Python" /> <Tech bg="blue" text="Terraform" /> </div>
                     </div>
                 </div>

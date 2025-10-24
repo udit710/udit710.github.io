@@ -30,11 +30,11 @@ function About() {
         <TypeAnimation
           sequence={[
             // Same substring at the start will only be typed once, initially
+            'I\'m a DevOps Engineer',
+            1000,
             'I\'m a Software Developer',
             1000,
             'I like automating things',
-            1000,
-            'I\'m a Tech Enthusiast',
             1000,
             'I enjoy solving problems',
             1000,
