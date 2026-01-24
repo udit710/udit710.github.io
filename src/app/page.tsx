@@ -8,7 +8,7 @@ import Intro from './components/Intro';
 import Content from './components/Content';
 import Sidebar from './components/Sidebar';
 import Experience from './components/Experience';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Projects from './components/Projects';
 import Achievements from './components/Achievements';
 import Volunteering from './components/Volunteering';
@@ -17,7 +17,23 @@ import Contact from './components/Contact';
 
 const Home: NextPage = () => {
   const [activeSection, setActiveSection] = useState('');
-  // const [isDark, setIsDark] = useState(false);
+  const [canScroll, setCanScroll] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  const mainRef = useRef<HTMLElement>(null);
+
+  // Check if screen is mobile size
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768); // Tailwind's md breakpoint
+    };
+
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+
+    return () => {
+      window.removeEventListener('resize', checkMobile);
+    };
+  }, []);
 
   // Function to handle intersection observer updates
   const handleIntersection = (entries: any[]) => {
@@ -29,13 +45,31 @@ const Home: NextPage = () => {
   };
 
   useEffect(() => {
+    if (isMobile) return; // Skip scroll logic on mobile
+
+    const handleScroll = () => {
+      if (mainRef.current) {
+        const rect = mainRef.current.getBoundingClientRect();
+        setCanScroll(rect.top <= 0);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Check initial position
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [isMobile]);
+
+  useEffect(() => {
     const options = {
       root: null,
       rootMargin: '0px',
       threshold: 0.5,
     };
     const observer = new IntersectionObserver(handleIntersection, options);
-    
+
     const sections = document.querySelectorAll('section');
     sections.forEach(section => observer.observe(section));
 
@@ -52,10 +86,16 @@ const Home: NextPage = () => {
     <>
       <Nav />
       <About />
-      <div className='flex max-h-[100vh] '>
-        <Sidebar activeSection={activeSection} />
-        {/* <main className="flex-1 p-10 lg:overflow-y-auto scroll-smooth "> */}
-        <main className="flex-1 p-10 w-[100%] lg:overflow-y-auto scroll-smooth">
+      <div className={`flex ${isMobile ? 'flex-col' : 'max-h-[100vh]'}`}>
+        {!isMobile && <Sidebar activeSection={activeSection} />}
+        <main
+          ref={mainRef}
+          className={`flex-1 p-10 w-[100%] ${
+            isMobile
+              ? ''
+              : canScroll ? 'overflow-y-auto' : 'overflow-y-hidden'
+          } overscroll-hidden`}
+        >
           <section id='about'>
             <Intro />
           </section>
