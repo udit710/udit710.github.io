@@ -13,7 +13,12 @@ function Experience() {
                     <h2 className="font-[Times] text-xl">May &apos;25 - Present</h2>
                     </div>
                     <div className="font-mono text-left text-sm md:text-lg px-4 py-2">
-                    <div className=" text-center text-sm font-mono"><Tech bg="blue" text="AWS" /> <Tech bg="blue" text="Python" /> <Tech bg="blue" text="Terraform" /> </div>
+                        <li>Automated infrastructure deployment using IaC tools which increased trust in systems and reduced risk by 90%.</li>
+                        <li>Integrated and monitored internal tooling and pipelines, enabling a better development experience for 1000+ developers.</li>
+                        <li>Led and designed internal tooling solutions, including AI, to enhance the developer productivity.</li>
+                        <li>Optimised cloud resource usage, resulting in a 10% increase in efficiency.</li>
+                        <li>Communicated across multi-domain teams to streamline workflows.</li>
+                    <div className=" text-center text-sm font-mono"><Tech bg="blue" text="AWS" /> <Tech bg="blue" text="Go" /> <Tech bg="blue" text="Terraform" /><Tech bg="blue" text="Python"/> <Tech bg="blue" text="CI/CD" /> <Tech bg="blue" text="Docker" /> <Tech bg="blue" text="Linux" /> <Tech bg="blue" text="Scripting" /> </div>
                     </div>
                 </div>
                 <div className="box-content m-auto bg-blue bg-opacity-10 m4 text-black mb-5 border-[0.5px] border-black hover:shadow-xl ">
@@ -26,7 +31,7 @@ function Experience() {
                     <li>Implemented Agile methodologies, including Scrum, to enhance collaboration, streamline project management, and deliver high-quality solutions on time.</li>
                     <li>Engaged with clients to understand requirements, provide Technical recommendations, and deliver customised solutions that meet their business needs.</li>
                     <br />
-                    <div className=" text-center text-sm font-mono"><Tech bg="blue" text="AWS" /> <Tech bg="blue" text="Agile" /> <Tech bg="blue" text="REST API" /> </div>
+                    <div className=" text-center text-sm font-mono"><Tech bg="blue" text="AWS" /> <Tech bg="blue" text="Agile" /> <Tech bg="blue" text="REST API" /> <Tech bg="blue" text="Python" /> </div>
                     </div>
                 </div>
                 {/* <div className="box-content m-auto bg-blue bg-opacity-10 m4 text-black mb-5 border-[0.5px] border-black hover:shadow-xl ">

@@ -10,7 +10,7 @@ function Skills() {
         },
         {
             title: "CI/CD",
-            skills: ["Git", "Docker", "Github Actions", "Linux"],
+            skills: ["Git", "Docker", "Github Actions", "Linux", "Buildkite"],
             bgColor: "bg-blue bg-opacity-60 text-white"
         },
         {
@@ -20,7 +20,7 @@ function Skills() {
         },
         {
             title: "Technologies",
-            skills: ["Node JS", "React JS", "Flask", "Django", "Spring boot", ".NET", "SwiftUI"],
+            skills: ["Node JS", "React JS", "Flask", "Spring Boot", "SwiftUI"],
             bgColor: "bg-blue bg-opacity-60 text-white"
         },
         {

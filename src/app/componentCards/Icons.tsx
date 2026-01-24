@@ -79,6 +79,8 @@ const iconMapping: { [key: string]: any } = {
     "CodePipeline": SiIcons.SiAmazonaws,
     "Numpy": SiIcons.SiNumpy,
     "Terraform": SiIcons.SiTerraform,
+    "Go": SiIcons.SiGo,
+    "Buildkite": SiIcons.SiBuildkite,
 };
 
 export default iconMapping;
