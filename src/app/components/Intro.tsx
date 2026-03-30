@@ -11,8 +11,7 @@ function Intro() {
                     A <b>versatile</b> and <b>proactive</b> engineer, excelling in dynamic team environments. My keen ability to <b>adapt</b> to evolving challenges and my ever-growing hunger for learning set me apart. I thrive on <b>social interactions</b> like attending code nights and meet-ups, bringing not only strong technical skills but also a collaborative and engaging presence to any project. With my <b>deep understanding</b> of web and app development, I am poised to make a significant and unique contribution to the field of software development.
                 </p>
             </text>
-            <br />
-            <button className="p-3 bg-blue text-white rounded-md font-mono">
+            {/* <button className="p-3 bg-blue text-white rounded-md font-mono">
                 <a
                     href="/resume.pdf"
                     target="_blank"
@@ -20,7 +19,7 @@ function Intro() {
                 >
                     <ImageText text="My Resume" IconEl={MdSimCardDownload} imageSrc={""} />
                 </a>
-            </button>
+            </button> */}
         </div>
     );
 }
