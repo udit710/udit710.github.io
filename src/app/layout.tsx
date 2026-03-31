@@ -20,7 +20,14 @@ export default function RootLayout({
       <Head>
           <link rel="shortcut icon" href="/images/favicon.ico" />
       </Head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <script
+          data-goatcounter="https://uditmalshe.goatcounter.com/count"
+          async
+          src="//gc.zgo.at/count.js"
+        />
+      </body>
     </html>
   );
 }
