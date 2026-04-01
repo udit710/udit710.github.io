@@ -14,6 +14,7 @@ import Achievements from './components/Achievements';
 import Volunteering from './components/Volunteering';
 import Education from './components/Education';
 import Contact from './components/Contact';
+import VisitorCount from './components/VisitorCount';
 
 const Home: NextPage = () => {
   const [activeSection, setActiveSection] = useState('');
@@ -119,7 +120,11 @@ const Home: NextPage = () => {
           </section>
           <section id='contact'>
             <Contact />
+            <VisitorCount />
           </section>
+          <footer className="mt-10 py-6 border-t border-gray-200 text-center text-sm text-gray-500 font-[Times]">
+            &copy; {new Date().getFullYear()} Udit Malshe. All rights reserved.
+          </footer>
         </main>
       </div>
     </>

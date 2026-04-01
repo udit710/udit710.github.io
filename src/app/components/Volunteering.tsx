@@ -43,7 +43,7 @@ function Volunteering() {
             <div className="w-8 border-t-2 border-black"></div>
             <MdOutlineHorizontalRule className="text-black -ml-4" />
           </div>
-          <a href='https://gdsc.community.dev/rmit-university-melbourne-australia/' target='_blank' className='font-[Times] text-lg ml-2'>
+          <a href='https://github.com/GDSC-RMIT-University/' target='_blank' className='font-[Times] text-lg ml-2'>
             <ImageText imageSrc={gdsc.src} text="GDSC RMIT" IconEl={'symbol'} />
             </a>
         </div>
