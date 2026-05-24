@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaPhoneAlt } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div className="md:p-6 p-0 h-[20vh] ">
+    <div className="md:p-6 p-0 pb-4">
       <div className="bg-blue text-white px-4 py-2 flex justify-between items-center border-[0.5px] border-black">
         <h1 className="text-3xl font-[Times]">Contact</h1>
       </div>
